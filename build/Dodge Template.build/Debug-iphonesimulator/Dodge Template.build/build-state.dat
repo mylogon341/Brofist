@@ -1,0 +1,1014 @@
+TDodge Template
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.pch Dodge\ Template/Dodge\ Template-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/NSDataAES256.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/GameCenterManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template normal i386
+cCompileStoryboard /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Main.storyboard
+cCopyStringsFile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/en.lproj/InfoPlist.strings Dodge\ Template/en.lproj/InfoPlist.strings
+cCpResource Dodge\ Template/8-BIT\ WONDER.TTF build/Debug-iphonesimulator/Dodge\ Template.app/8-BIT\ WONDER.TTF
+cCpResource Dodge\ Template/point.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/point.mp3
+cCpResource Dodge\ Template/deadSound.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/deadSound.mp3
+cCompileAssetCatalog /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Images.xcassets
+cProcessInfoPlistFile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Info.plist /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Dodge\ Template-Info.plist
+cGenerateDSYMFile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app.dSYM /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template
+cTouch /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053472F230000000000000198
+t1397174051
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531E5C6600000000000003B4
+t1394498662
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E5C6E000000000000019E
+t1394498670
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000531E5C6F0000000000484210
+t1394498671
+s4735504
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+c00000000531E5C6F0000000000098030
+t1394498671
+s622640
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AdSupport.framework/AdSupport
+c00000000531E5C6F0000000000008CC0
+t1394498671
+s36032
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000531E5C700000000000904120
+t1394498672
+s9453856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000531E5C70000000000058E0E0
+t1394498672
+s5824736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c00000000531E5C6F00000000000FB140
+t1394498671
+s1028416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000531E5C7000000000005B82F0
+t1394498672
+s5997296
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000053472EE50000000000446820
+t1397173989
+s4483104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+c00000000531E5C7000000000003599D0
+t1394498672
+s3512784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+c00000000531E5C7000000000000CF090
+t1394498672
+s848016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c00000000531E5C70000000000013B8C0
+t1394498672
+s1292480
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+c00000000531E5C70000000000022B660
+t1394498672
+s2274912
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000531E5C7100000000002FC3B0
+t1394498673
+s3130288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000531E5C70000000000004B000
+t1394498672
+s307200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E5C71000000000088D8C0
+t1394498673
+s8968384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/Frameworks/GameCenterFoundation.framework/GameCenterFoundation
+c00000000531E5C710000000000283E10
+t1394498673
+s2637328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/Frameworks/GameCenterUI.framework/GameCenterUI
+c00000000531E5C7100000000004BF480
+t1394498673
+s4977792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/Frameworks/LegacyGameKit.framework/LegacyGameKit
+c00000000531E5C71000000000003F030
+t1394498673
+s258096
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/GameKit
+c00000000531E5C710000000000008790
+t1394498673
+s34704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c00000000531E5C730000000000799E30
+t1394498675
+s7970352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+c00000000531E5C730000000000666DB0
+t1394498675
+s6712752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c00000000531E5C7300000000002E5520
+t1394498675
+s3036448
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000531E5C730000000000037680
+t1394498675
+s226944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000531E5C73000000000048F720
+t1394498675
+s4781856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000531E5C73000000000013FD70
+t1394498675
+s1310064
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
+c00000000531E5C73000000000006E450
+t1394498675
+s451664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000531E5C7300000000001081C0
+t1394498675
+s1081792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000531E5C760000000001F1DE10
+t1394498678
+s32628240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/iAd.framework/iAd
+c00000000531E5C7200000000000DEA30
+t1394498674
+s911920
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c00000000531E5C8300000000002BC360
+t1394498691
+s2868064
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+c00000000531E5C890000000000002338
+t1394498697
+s9016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+c00000000531E5C8A000000000008D370
+t1394498698
+s578416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+c00000000531E5C8A0000000000392E20
+t1394498698
+s3747360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+c00000000537664A600000000000141F0
+t1400267942
+s82416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+c00000000531E5C8A0000000000014A80
+t1394498698
+s84608
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+c00000000531E5C8A0000000000033BA0
+t1394498698
+s211872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+c00000000531E5C8A000000000001CFB0
+t1394498698
+s118704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+c00000000531E5C8A000000000001B2B0
+t1394498698
+s111280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+c00000000531E5C8A00000000000C9570
+t1394498698
+s824688
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+c00000000531E5C8A0000000000063280
+t1394498698
+s406144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+c00000000531E5C8A0000000000008880
+t1394498698
+s34944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+c00000000531E5C8A0000000000015080
+t1394498698
+s86144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+c00000000531E5C8A00000000000230F0
+t1394498698
+s143600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+c00000000531E5C8A000000000000E380
+t1394498698
+s58240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+c00000000531E5C8A0000000000089380
+t1394498698
+s562048
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+c00000000531E5C8A0000000000017320
+t1394498698
+s95008
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+c00000000531E5C8A0000000000039CD0
+t1394498698
+s236752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+c00000000531E5C8A000000000000B0B0
+t1394498698
+s45232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+c00000000531E5C8A0000000000167E80
+t1394498698
+s1474176
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+c00000000531E5C8A00000000000106A0
+t1394498698
+s67232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+c00000000531E5C8A000000000001CE40
+t1394498698
+s118336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+c00000000531E5C8A00000000000740C0
+t1394498698
+s475328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+c00000000531E5C8A000000000006CA60
+t1394498698
+s445024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+c00000000531E5C8A000000000001BAD0
+t1394498698
+s113360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+c00000000531E5C8A0000000000084A20
+t1394498698
+s543264
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E5C8F0000000000000ADC
+t1394498703
+s2780
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+c0000000053472EE5000000000000514C
+t1397173989
+s20812
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/8-BIT WONDER.TTF
+c0000000053444FA400000000000037F8
+t1396985764
+s14328
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADAdSize.h
+c00000000535A1A780000000000000E6E
+t1398413944
+s3694
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADBannerView.h
+c00000000535A1A780000000000001409
+t1398413944
+s5129
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADBannerViewDelegate.h
+c00000000535A1A780000000000000A2E
+t1398413944
+s2606
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADInAppPurchaseDelegate.h
+c00000000535A1A780000000000000218
+t1398413944
+s536
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADModules.h
+c00000000535A1A78000000000000017E
+t1398413944
+s382
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADRequest.h
+c00000000535A1A780000000000001543
+t1398413944
+s5443
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADRequestError.h
+c00000000535A1A780000000000000666
+t1398413944
+s1638
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/libGoogleAdMobAds.a
+c00000000535A1A780000000000ABCDD4
+t1398413944
+s11259348
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.h
+c00000000537BB44300000000000000F6
+t1400616003
+s246
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.m
+c00000000537BB44300000000000007B8
+t1400616003
+s1976
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Dodge Template-Info.plist
+c00000000537F675D000000000000047D
+t1400858461
+s1149
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Dodge Template-Prefix.pch
+c00000000537BB1E10000000000000158
+t1400615393
+s344
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.h
+c0000000052C6E93A00000000000036D1
+t1388767546
+s14033
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.m
+c0000000052C6E93A000000000000E78A
+t1388767546
+s59274
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets
+c000000005398C2FD0000000000000286
+t1402520317
+s646
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Main.storyboard
+c000000005398CE4B000000000000556B
+t1402523211
+s21867
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.h
+c0000000052C6E93A00000000000000B7
+t1388767546
+s183
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.m
+c0000000052C6E93A00000000000008CC
+t1388767546
+s2252
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.h
+c0000000052C6E93A0000000000000D54
+t1388767546
+s3412
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.m
+c0000000052C6E93A0000000000003665
+t1388767546
+s13925
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/ViewController.h
+c000000005398CB750000000000000571
+t1402522485
+s1393
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/ViewController.m
+c000000005398CED10000000000005822
+t1402523345
+s22562
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/deadSound.mp3
+c0000000053444FA40000000000003142
+t1396985764
+s12610
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/en.lproj/InfoPlist.strings
+c00000000537BB1E1000000000000002D
+t1400615393
+s45
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/main.m
+c00000000537BB1E10000000000000154
+t1400615393
+s340
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/point.mp3
+c0000000053444FA4000000000002803A
+t1396985764
+s163898
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app
+t1402523345
+s510
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app.dSYM
+t1402523321
+s102
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/8-BIT WONDER.TTF
+t1402520396
+s14328
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Dodge Template
+t1402523345
+s975400
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Info.plist
+t1402520417
+s1109
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Main.storyboardc
+t1402523214
+s170
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/PkgInfo
+t1402520417
+s8
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/deadSound.mp3
+t1402520396
+s12610
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/en.lproj/InfoPlist.strings
+t1402520396
+s42
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/point.mp3
+t1402520396
+s163898
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/AppDelegate.o
+t1402520392
+s62400
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/Dodge Template.LinkFileList
+c000000005398C340000000000000036A
+t1402520384
+s874
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/GameCenterManager.o
+t1402520392
+s222572
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/NSDataAES256.o
+t1402520391
+s10976
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/Reachability.o
+t1402520392
+s40372
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/ViewController.o
+t1402523345
+s164676
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/main.o
+t1402520391
+s3556
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/assetcatalog_dependencies.txt
+t1402520409
+s703
+
+N/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/assetcatalog_generated_info.plist
+t1402520409
+s777
+
+N/usr/lib/libSystem.B.dylib
+c0000000053766490000000000000E6D0
+t1400267920
+s59088
+
+N/usr/lib/system/libcache.dylib
+c0000000052CA18000000000000012A00
+t1388976128
+s76288
+
+N/usr/lib/system/libcommonCrypto.dylib
+c0000000052CA17D9000000000002E320
+t1388976089
+s189216
+
+N/usr/lib/system/libcompiler_rt.dylib
+c0000000052CA17EB0000000000021860
+t1388976107
+s137312
+
+N/usr/lib/system/libcopyfile.dylib
+c0000000052CA17FF000000000001B620
+t1388976127
+s112160
+
+N/usr/lib/system/libcorecrypto.dylib
+c0000000052CA17FF00000000000BD920
+t1388976127
+s776480
+
+N/usr/lib/system/libdyld.dylib
+c00000000537664A600000000000141F0
+t1400267942
+s82416
+
+N/usr/lib/system/libkeymgr.dylib
+c0000000052CA1800000000000000A120
+t1388976128
+s41248
+
+N/usr/lib/system/liblaunch.dylib
+c00000000531A65FE000000000001D550
+t1394238974
+s120144
+
+N/usr/lib/system/libmacho.dylib
+c0000000052CA17FE0000000000014EE0
+t1388976126
+s85728
+
+N/usr/lib/system/libquarantine.dylib
+c0000000052CA18020000000000010380
+t1388976130
+s66432
+
+N/usr/lib/system/libremovefile.dylib
+c0000000052CA1802000000000000C4C0
+t1388976130
+s50368
+
+N/usr/lib/system/libsystem_asl.dylib
+c0000000052CA180000000000000357A0
+t1388976128
+s219040
+
+N/usr/lib/system/libsystem_blocks.dylib
+c0000000052CA1800000000000000C070
+t1388976128
+s49264
+
+N/usr/lib/system/libsystem_c.dylib
+c00000000531A65BA0000000000168D00
+t1394238906
+s1477888
+
+N/usr/lib/system/libsystem_configuration.dylib
+c00000000537664A20000000000010630
+t1400267938
+s67120
+
+N/usr/lib/system/libsystem_dnssd.dylib
+c00000000531A65FF000000000001DF10
+t1394238975
+s122640
+
+N/usr/lib/system/libsystem_info.dylib
+c0000000052CA17EB0000000000075B00
+t1388976107
+s482048
+
+N/usr/lib/system/libsystem_kernel.dylib
+c0000000053766490000000000007CD60
+t1400267920
+s511328
+
+N/usr/lib/system/libsystem_m.dylib
+c0000000052CA17EB00000000000766C0
+t1388976107
+s485056
+
+N/usr/lib/system/libsystem_malloc.dylib
+c00000000531A65FE0000000000044DC0
+t1394238974
+s282048
+
+N/usr/lib/system/libsystem_notify.dylib
+c0000000052CA17EB0000000000021FA0
+t1388976107
+s139168
+
+N/usr/lib/system/libsystem_platform.dylib
+c00000000531A65FE000000000002D920
+t1394238974
+s186656
+
+N/usr/lib/system/libsystem_pthread.dylib
+c0000000052CA1801000000000001E570
+t1388976129
+s124272
+
+N/usr/lib/system/libsystem_sandbox.dylib
+c0000000053766499000000000000CC70
+t1400267929
+s52336
+
+N/usr/lib/system/libunc.dylib
+c0000000052CA17F9000000000000C3F0
+t1388976121
+s50160
+
+N/usr/lib/system/libunwind.dylib
+c0000000052CA180100000000000199F0
+t1388976129
+s104944
+
+N/var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge Template-Prefix.pch.pch
+t1402520390
+s122104
+
+CBuild AST from /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/AppDelegate.m
+r0
+
+CBuild AST from /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/GameCenterManager.m
+r0
+
+CBuild AST from /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/NSDataAES256.m
+r0
+
+CBuild AST from /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Reachability.m
+r0
+
+CBuild AST from /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/ViewController.m
+r0
+
+CBuild AST from /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies925d51510649b941^27de51510649b941^---0#1#1#--18"Check dependencies36"A75D13A1-63C9-45AC-BAFC-E16E70F578DC-
+
+CCompileAssetCatalog /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Images.xcassets
+s424213196.918427
+e424213209.046297
+r1
+xCompileAssetCatalog
+x/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets
+o/* com.apple.actool.document.warnings */
+o/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets:./LaunchImage.launchimage/[iphone][][2x][portrait][full-screen][7.0]: warning: The file "Launch_PixelBulls@2x.png" for the image set "LaunchImage" does not exist.
+o/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets:./LaunchImage.launchimage/[iphone][retina4][2x][portrait][full-screen][7.0]: warning: The file "Launch_PixelBulls.png" for the image set "LaunchImage" does not exist.
+o/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets:./AppIcon.appiconset/[][][][LargeIcon.png]: warning: The app icon set "AppIcon" has an unassigned image.
+o/* com.apple.actool.compilation-results */
+o/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/AppIcon29x29@2x.png
+o/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/AppIcon40x40@2x.png
+o/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/AppIcon60x60@2x.png
+o/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/LaunchImage-700-568h@2x.png
+o/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Assets.car
+o/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"CompileAssetCatalog build/Debug-iphonesimulator/Dodge\ Template.app Dodge\ Template/Images.xcassets99"CompileAssetCatalog build/Debug-iphonesimulator/Dodge\ Template.app Dodge\ Template/Images.xcassets242bebccfa48b941^1adb0bd9fa48b941^-1420"/* com.apple.actool.document.warnings *//Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets:./LaunchImage.launchimage/[iphone][][2x][portrait][full-screen][7.0]: warning: The file "Launch_PixelBulls@2x.png" for the image set "LaunchImage" does not exist./Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets:./LaunchImage.launchimage/[iphone][retina4][2x][portrait][full-screen][7.0]: warning: The file "Launch_PixelBulls.png" for the image set "LaunchImage" does not exist./Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Images.xcassets:./AppIcon.appiconset/[][][][LargeIcon.png]: warning: The app icon set "AppIcon" has an unassigned image./* com.apple.actool.compilation-results *//Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/AppIcon29x29@2x.png/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/AppIcon40x40@2x.png/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/AppIcon60x60@2x.png/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/LaunchImage-700-568h@2x.png/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Assets.car/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/assetcatalog_generated_info.plist3(21%IDEActivityLogMessage2@83"The file "Launch_PixelBulls@2x.png" for the image set "LaunchImage" does not exist.-424213209#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@81"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Images.xcassets/0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Asset Catalog Compiler Warning--2@80"The file "Launch_PixelBulls.png" for the image set "LaunchImage" does not exist.-424213209#18446744073709551615#0#-1#-3@81"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Images.xcassets/0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Asset Catalog Compiler Warning--2@51"The app icon set "AppIcon" has an unassigned image.-424213209#18446744073709551615#0#-1#-3@81"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Images.xcassets/0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Asset Catalog Compiler Warning--0#0#1#-19%DVTDocumentLocation4@81"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Images.xcassets/0000000000000000^1166"CompileAssetCatalog build/Debug-iphonesimulator/Dodge\ Template.app Dodge\ Template/Images.xcassets    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphonesimulator --minimum-deployment-target 7.0 --target-device iphone --compress-pngs --compile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Images.xcassets36"D792F155-1F50-4A03-A262-D2F87955AD8F-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424213190.079437
+e424213192.068082
+r1
+xCompileC
+xbuild/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/AppDelegate.o
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.m
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.m212"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.o Dodge\ Template/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6c7a14c6fa48b941^b26511c8fa48b941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/AppDelegate.m0000000000000000^3786"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.o Dodge\ Template/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -include /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch -MMD -MT dependencies -MF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.dia -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/AppDelegate.m -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/AppDelegate.o36"2114C95E-9BEC-4372-93BA-6BE3B0ADD824-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/GameCenterManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424213191.428368
+e424213192.715868
+r1
+xCompileC
+xbuild/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/GameCenterManager.o
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.m
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.m224"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.o Dodge\ Template/GameCenterManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera8df6dc7fa48b941^bf45b7c8fa48b941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/GameCenterManager.m0000000000000000^3822"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.o Dodge\ Template/GameCenterManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -include /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch -MMD -MT dependencies -MF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.d --serialize-diagnostics /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.dia -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/GameCenterManager.m -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/GameCenterManager.o36"25B6B0F2-569C-4C40-9879-2773D120E908-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/NSDataAES256.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424213190.080797
+e424213191.407898
+r1
+xCompileC
+xbuild/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/NSDataAES256.o
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.m
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.m214"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.o Dodge\ Template/NSDataAES256.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4fce14c6fa48b941^226c68c7fa48b941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/NSDataAES256.m0000000000000000^3792"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.o Dodge\ Template/NSDataAES256.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -include /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch -MMD -MT dependencies -MF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.d --serialize-diagnostics /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.dia -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/NSDataAES256.m -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/NSDataAES256.o36"76921592-6686-4BF5-9989-CEB9895873F0-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424213191.429565
+e424213192.958318
+r1
+xCompileC
+xbuild/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/Reachability.o
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.m
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.m214"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.o Dodge\ Template/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8e1f6ec7fa48b941^527ff5c8fa48b941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Reachability.m0000000000000000^3792"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.o Dodge\ Template/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -include /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch -MMD -MT dependencies -MF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.d --serialize-diagnostics /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.dia -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Reachability.m -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Reachability.o36"7125A24F-C147-43A2-8E20-6A28E09512EA-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424216145.320102
+e424216145.487271
+r1
+xCompileC
+xbuild/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/ViewController.o
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/ViewController.m
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/ViewController.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADBannerView.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADAdSize.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADModules.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADBannerViewDelegate.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADInAppPurchaseDelegate.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADRequest.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/GADRequestError.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/GameCenterManager.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Reachability.h
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/NSDataAES256.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/ViewController.m218"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.o Dodge\ Template/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler792052510649b941^59c07c510649b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/ViewController.m0000000000000000^3804"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.o Dodge\ Template/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -include /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch -MMD -MT dependencies -MF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.dia -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/ViewController.m -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/ViewController.o36"3E57710C-3885-40BE-A4E4-8740C2F24409-
+b9EEE8E12-FD4E-417E-B623-186E9D27F168
+
+CCompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.o /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424213190.080004
+e424213191.407985
+r1
+xCompileC
+xbuild/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/main.o
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/main.m
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/main.m198"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.o Dodge\ Template/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0ebe14c6fa48b941^fe7b68c7fa48b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/main.m0000000000000000^3744"CompileC build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.o Dodge\ Template/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -include /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch -MMD -MT dependencies -MF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.dia -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/main.m -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/main.o36"07EE4207-651D-449A-A8DD-642A20B5EB0D-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCompileStoryboard /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Main.storyboard
+s424216011.147250
+e424216014.694919
+r1
+xCompileStoryboard
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Main.storyboard
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"CompileStoryboard Dodge\ Template/Main.storyboard49"CompileStoryboard Dodge\ Template/Main.storyboard15c725cb0549b941^68e6b1ce0549b941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Main.storyboard0000000000000000^827"CompileStoryboard Dodge\ Template/Main.storyboard    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export IBSC_MINIMUM_COMPATIBILITY_VERSION=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Main.storyboardc /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Main.storyboard36"933F0D7F-998D-4ABD-AD0B-EEF7C259C0D1-
+bEF5585C8-956F-40F2-A0E8-6DE8713707ED
+
+CCopyStringsFile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/en.lproj/InfoPlist.strings Dodge\ Template/en.lproj/InfoPlist.strings
+s424213196.848753
+e424213196.931353
+r1
+xCopyStringsFile
+x/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/en.lproj/InfoPlist.strings
+xDodge Template/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy Dodge Template/en.lproj/InfoPlist.strings133"CopyStringsFile build/Debug-iphonesimulator/Dodge\ Template.app/en.lproj/InfoPlist.strings Dodge\ Template/en.lproj/InfoPlist.stringsfa60d9ccfa48b941^656eeeccfa48b941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/en.lproj/InfoPlist.strings0000000000000000^611"CopyStringsFile build/Debug-iphonesimulator/Dodge\ Template.app/en.lproj/InfoPlist.strings Dodge\ Template/en.lproj/InfoPlist.strings    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/en.lproj -- Dodge\ Template/en.lproj/InfoPlist.strings36"F5F0C0F4-75DD-45C5-B880-892B43CFCEEC-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCpResource Dodge\ Template/8-BIT\ WONDER.TTF build/Debug-iphonesimulator/Dodge\ Template.app/8-BIT\ WONDER.TTF
+s424213196.849088
+e424213196.916930
+r1
+xCpResource
+xDodge Template/8-BIT WONDER.TTF
+xbuild/Debug-iphonesimulator/Dodge Template.app/8-BIT WONDER.TTF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug-iphonesimulator/Dodge Template.app/8-BIT WONDER.TTF110"CpResource Dodge\ Template/8-BIT\ WONDER.TTF build/Debug-iphonesimulator/Dodge\ Template.app/8-BIT\ WONDER.TTF037ad9ccfa48b941^feb7eaccfa48b941^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge%20Template.app/8-BIT%20WONDER.TTF0034f4dfdeffdf42^630"CpResource Dodge\ Template/8-BIT\ WONDER.TTF build/Debug-iphonesimulator/Dodge\ Template.app/8-BIT\ WONDER.TTF    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/8-BIT\ WONDER.TTF /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app36"786F4A5F-B2E1-4652-A195-5BD657FA1640-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCpResource Dodge\ Template/deadSound.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/deadSound.mp3
+s424213196.917177
+e424213196.918097
+r1
+xCpResource
+xDodge Template/deadSound.mp3
+xbuild/Debug-iphonesimulator/Dodge Template.app/deadSound.mp3
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/Dodge Template.app/deadSound.mp3102"CpResource Dodge\ Template/deadSound.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/deadSound.mp3ceddeaccfa48b941^0f09ebccfa48b941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge%20Template.app/deadSound.mp30034f4dfdeffdf42^618"CpResource Dodge\ Template/deadSound.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/deadSound.mp3    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/deadSound.mp3 /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app36"F0276D11-F58D-4CEE-957F-F20DF38A9D57-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CCpResource Dodge\ Template/point.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/point.mp3
+s424213196.849629
+e424213196.916794
+r1
+xCpResource
+xDodge Template/point.mp3
+xbuild/Debug-iphonesimulator/Dodge Template.app/point.mp3
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/Dodge Template.app/point.mp394"CpResource Dodge\ Template/point.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/point.mp33e97d9ccfa48b941^0fb4eaccfa48b941^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge%20Template.app/point.mp30034f4dfdeffdf42^606"CpResource Dodge\ Template/point.mp3 build/Debug-iphonesimulator/Dodge\ Template.app/point.mp3    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/point.mp3 /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app36"39173A29-E1DE-41CA-9398-0BA3387DFF4B-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CGenerateDSYMFile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app.dSYM /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template
+s424216145.613384
+e424216145.641755
+r1
+xGenerateDSYMFile
+x/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app.dSYM
+x/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Dodge Template
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Generate /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app.dSYM133"GenerateDSYMFile build/Debug-iphonesimulator/Dodge\ Template.app.dSYM build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Templateba129d510649b941^b64aa4510649b941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge%20Template.app.dSYM/0000000000000000^679"GenerateDSYMFile build/Debug-iphonesimulator/Dodge\ Template.app.dSYM build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app.dSYM36"09D4DD00-5311-46D6-B6B6-ABB264E97D63-
+b9EEE8E12-FD4E-417E-B623-186E9D27F168
+
+CLd /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template normal i386
+s424216145.490697
+e424216145.610798
+r1
+xLd
+x/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Dodge Template
+xnormal
+xi386
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/Dodge Template.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/ViewController.o
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/AppDelegate.o
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/main.o
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/NSDataAES256.o
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/GameCenterManager.o
+d/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge Template.build/Debug-iphonesimulator/Dodge Template.build/Objects-normal/i386/Reachability.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AdSupport.framework/AdSupport
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/AdMob/libGoogleAdMobAds.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/GameKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/Frameworks/GameCenterFoundation.framework/GameCenterFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/Frameworks/GameCenterUI.framework/GameCenterUI
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/GameKit.framework/Frameworks/LegacyGameKit.framework/LegacyGameKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Link /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Dodge Template78"Ld build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template normal i386c7b97d510649b941^0b5e9c510649b941^---0#0#1#--1690"Ld build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template normal i386    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -L/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/AdMob -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator -filelist /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Dodge\ Template.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework AdSupport -framework AudioToolbox -framework AVFoundation -framework CoreGraphics -framework CoreTelephony -framework MessageUI -framework StoreKit -framework SystemConfiguration -lGoogleAdMobAds -framework GameKit -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Objects-normal/i386/Dodge\ Template_dependency_info.dat -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Dodge\ Template36"6FD93ED0-B42F-4944-B6C2-3F02A486FB40-
+b9EEE8E12-FD4E-417E-B623-186E9D27F168
+
+CProcessInfoPlistFile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Info.plist /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Dodge\ Template-Info.plist
+s424213217.435628
+e424213217.438015
+r1
+xProcessInfoPlistFile
+x/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge Template.app/Info.plist
+x/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Dodge Template-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Process /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Dodge Template-Info.plist122"ProcessInfoPlistFile build/Debug-iphonesimulator/Dodge\ Template.app/Info.plist Dodge\ Template/Dodge\ Template-Info.plistf3926fe1fa48b941^572270e1fa48b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Dodge%20Template-Info.plist0000000000000000^923"ProcessInfoPlistFile build/Debug-iphonesimulator/Dodge\ Template.app/Info.plist Dodge\ Template/Dodge\ Template-Info.plist    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Dodge\ Template-Info.plist -genpkginfo /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/assetcatalog_generated_info.plist -o /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app/Info.plist36"AC25B0B5-ADCD-43DC-BB0C-AEF4EFCE666B-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CProcessPCH /Users/luvieere/Library/Developer/Xcode/DerivedData/Dodge_Template-goisnurvuzpjgyflwrwjdhxovilz/Index/PrecompiledHeaders/Dodge\ Template-Prefix-dlwxsqlxuhfqcwdjhxrkaarweile_ast/Dodge\ Template-Prefix.pch.pch Dodge\ Template/Dodge\ Template-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.pch Dodge\ Template/Dodge\ Template-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424213184.346485
+e424213190.077867
+r1
+xProcessPCH
+x/var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge Template-Prefix.pch.pch
+xDodge Template/Dodge Template-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/luvieere/Desktop/DodgeTheRedBalls/Dodge Template/Dodge Template-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile Dodge Template/Dodge Template-Prefix.pch322"ProcessPCH /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.pch Dodge\ Template/Dodge\ Template-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc0cb58c0fa48b941^3df213c6fa48b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/luvieere/Desktop/DodgeTheRedBalls/Dodge%20Template/Dodge%20Template-Prefix.pch0000000000000000^3868"ProcessPCH /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.pch Dodge\ Template/Dodge\ Template-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/luvieere/Desktop/DodgeTheRedBalls    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/luvieere/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-generated-files.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-own-target-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-all-target-headers.hmap -iquote /Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/Dodge\ Template-project-headers.hmap -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources/i386 -I/Users/luvieere/Desktop/DodgeTheRedBalls/build/Dodge\ Template.build/Debug-iphonesimulator/Dodge\ Template.build/DerivedSources -F/Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.d -c /Users/luvieere/Desktop/DodgeTheRedBalls/Dodge\ Template/Dodge\ Template-Prefix.pch -o /var/folders/t3/lpqbvjzj017cz3dr1pl7nk2m0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Dodge\ Template-Prefix-frlbkasirwjxirdalnzbllojvkeg/Dodge\ Template-Prefix.pch.pch36"E71AC14E-D39C-4564-B3D5-94385F42EF5B-
+b3AAC8434-6A00-46AC-BFC5-D1B559B48550
+
+CTouch /Users/luvieere/Desktop/DodgeTheRedBalls/build/Debug-iphonesimulator/Dodge\ Template.app
+r0
+
