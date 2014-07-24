@@ -831,9 +831,6 @@ if (buttonIndex == 2) {
     for(SKPaymentTransaction *transaction in transactions){
         switch (transaction.transactionState){
                 
-            case SKPaymentTransactionStateDeferred:{
-                
-            }break;
             case SKPaymentTransactionStatePurchasing:{
                 NSLog(@"Transaction state -> Purchasing");
                 //called when the user is in the process of purchasing, do not add any of your own code here.

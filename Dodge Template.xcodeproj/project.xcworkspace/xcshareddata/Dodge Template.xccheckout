@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E329A141-58FE-4959-B111-544FA2262051</string>
+	<string>F3269FE7-36CB-47D9-9A84-F2C7CDCC042B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Dodge Template</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>92DC2DCB-FED3-4F9D-837E-1E0CA8EB2005</key>
-		<string>https://github.com/mylogon341/brofist.git</string>
+		<key>1FBDF094-24DD-4A21-B6CA-437AECE65D20</key>
+		<string>https://github.com/mylogon341/testtest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Dodge Template.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>92DC2DCB-FED3-4F9D-837E-1E0CA8EB2005</key>
+		<key>1FBDF094-24DD-4A21-B6CA-437AECE65D20</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mylogon341/brofist.git</string>
+	<string>https://github.com/mylogon341/testtest.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>92DC2DCB-FED3-4F9D-837E-1E0CA8EB2005</string>
+	<string>1FBDF094-24DD-4A21-B6CA-437AECE65D20</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>92DC2DCB-FED3-4F9D-837E-1E0CA8EB2005</string>
+			<string>1FBDF094-24DD-4A21-B6CA-437AECE65D20</string>
 			<key>IDESourceControlWCCName</key>
-			<string>DodgeTheRedBalls-2</string>
+			<string>testtest</string>
 		</dict>
 	</array>
 </dict>
