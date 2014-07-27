@@ -22,11 +22,7 @@ BOOL go;
     IBOutlet UIButton *credits;
     UIButton * button;
     IBOutlet UIButton *highscoreButton;
-    CGRect ob1;
-    CGRect ob2;
-    CGRect ob3;
-    CGRect ob4;
-    CGRect ob5;
+    
     int socialAlert;
     
     int startScore;

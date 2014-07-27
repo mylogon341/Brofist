@@ -402,6 +402,7 @@ int lol;
     
     [_gameoverView setUserInteractionEnabled:YES];
     
+    startScore = 0;
     
 }
 
@@ -630,80 +631,46 @@ if (buttonIndex == 2) {
 
 -(void)initObject1{
     int steelX = arc4random_uniform(320) ;
-    int steelY = -100;
+    int steelY = -180;
     
     _object1.center = CGPointMake(steelX, steelY);
     
-    [self collision:_object1];
-    
-    
 }
 
--(void)collision:(UIImageView *)IV1{
-    
-    ob1 = _object1.frame;
-    ob2 = _object2.frame;
-    ob3 = _object3.frame;
-    ob4 = _object4.frame;
-    ob5 = _object5.frame;
-    
-    
-    [self coll1:IV1];
-}
-
--(void)coll1:(UIImageView *)IV{
-    
-    IV.center = CGPointMake(IV.center.x, IV.center.y - 100);
-    
-    if (CGRectIntersectsRect(ob1, ob2) || CGRectIntersectsRect(ob1, ob3) || CGRectIntersectsRect(ob1, ob4) || CGRectIntersectsRect(ob1, ob5)) {
-        IV.center = CGPointMake(IV.center.x,IV.center.y -100);
-        [self coll2:IV];
-        
-    }
-}
-
--(void)coll2:(UIImageView *)IV2{
-    
-    if (CGRectIntersectsRect(ob1, ob2) || CGRectIntersectsRect(ob1, ob3) || CGRectIntersectsRect(ob1, ob4) || CGRectIntersectsRect(ob1, ob5)) {
-        IV2.center = CGPointMake(IV2.center.x,IV2.center.y -100);
-    }
-    if (CGRectIntersectsRect(ob1, ob2) || CGRectIntersectsRect(ob1, ob3) || CGRectIntersectsRect(ob1, ob4) || CGRectIntersectsRect(ob1, ob5)) {
-        IV2.center = CGPointMake(IV2.center.x,IV2.center.y -100);
-    }
-    if (CGRectIntersectsRect(ob1, ob2) || CGRectIntersectsRect(ob1, ob3) || CGRectIntersectsRect(ob1, ob4) || CGRectIntersectsRect(ob1, ob5)) {
-        IV2.center = CGPointMake(IV2.center.x,IV2.center.y -100);
-    }
-    if (CGRectIntersectsRect(ob1, ob2) || CGRectIntersectsRect(ob1, ob3) || CGRectIntersectsRect(ob1, ob4) || CGRectIntersectsRect(ob1, ob5)) {
-        IV2.center = CGPointMake(IV2.center.x,IV2.center.y -100);
-    }
-    
-    if (CGRectIntersectsRect(ob1, ob2) || CGRectIntersectsRect(ob1, ob3) || CGRectIntersectsRect(ob1, ob4) || CGRectIntersectsRect(ob1, ob5)) {
-        [self initObject1];
-    }
-}
 
 -(void)initObject2{
     int r = arc4random_uniform(320) ;
     int h = -_object2.frame.size.height/2;
     _object2.center = CGPointMake(r, h);
-    [self collision:_object2];
+    
+    [self collision:_object2.frame];
+
 }
 
 -(void)initObject3{
     int r = arc4random_uniform(320) ;
     _object3.center = CGPointMake(r, -_object3.frame.size.height/2 - 30);
-    [self collision:_object3];
+    [self collision:_object3.frame];
 }
 
 -(void)initObject4{
     int r = arc4random_uniform(320);
     _object4.center = CGPointMake(r, -_object4.frame.size.height/2 - 60);
-    [self collision:_object4];
+    [self collision:_object4.frame];
 }
 -(void)initObject5{
     int r = arc4random_uniform(320);
     _object5.center = CGPointMake(r, -_object5.frame.size.height/2 - 90);
-    [self collision:_object5];
+    [self collision:_object5.frame];
+}
+
+-(void)collision:(CGRect)objectRect{
+    
+    if (CGRectIntersectsRect(objectRect,_object1.frame)) {
+        
+        objectRect.origin = CGPointMake(objectRect.origin.x, objectRect.origin.y - 100);
+        NSLog(@"crashed");
+    }
 }
 
 
