@@ -391,7 +391,6 @@ int lol;
                      }];
     
     socialAlert = [[defaults objectForKey:@"alert"]intValue];
-    NSLog(@"%i",socialAlert);
     
     //   socialAlert = 1;
     
@@ -631,48 +630,46 @@ if (buttonIndex == 2) {
 
 -(void)initObject1{
     int steelX = arc4random_uniform(320) ;
-    int steelY = -180;
-    
-    _object1.center = CGPointMake(steelX, steelY);
-    
+    int h = -(arc4random() %110);
+    _object1.center = CGPointMake(steelX, h);
+    [self coll];
+}
+
+-(void)coll{
+    if (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object3.frame) || (CGRectIntersectsRect(_object1.frame, _object4.frame) || (CGRectIntersectsRect(_object1.frame, _object5.frame)))))){
+
+        _object1.center = CGPointMake(arc4random_uniform(320), -125);
+    }
 }
 
 
 -(void)initObject2{
     int r = arc4random_uniform(320) ;
-    int h = -_object2.frame.size.height/2;
+    int h = -(arc4random() %90);
     _object2.center = CGPointMake(r, h);
-    
-    [self collision:_object2.frame];
-
+    [self coll];
 }
 
 -(void)initObject3{
     int r = arc4random_uniform(320) ;
-    _object3.center = CGPointMake(r, -_object3.frame.size.height/2 - 30);
-    [self collision:_object3.frame];
+    int h = -(arc4random() %90);
+    _object3.center = CGPointMake(r, h);
+    [self coll];
 }
 
 -(void)initObject4{
     int r = arc4random_uniform(320);
-    _object4.center = CGPointMake(r, -_object4.frame.size.height/2 - 60);
-    [self collision:_object4.frame];
+    int h = -(arc4random() %90);
+    _object4.center = CGPointMake(r, h);
+    [self coll];
 }
+
 -(void)initObject5{
     int r = arc4random_uniform(320);
-    _object5.center = CGPointMake(r, -_object5.frame.size.height/2 - 90);
-    [self collision:_object5.frame];
+    int h = -(arc4random() %90);
+    _object5.center = CGPointMake(r, h);
+    [self coll];
 }
-
--(void)collision:(CGRect)objectRect{
-    
-    if (CGRectIntersectsRect(objectRect,_object1.frame)) {
-        
-        objectRect.origin = CGPointMake(objectRect.origin.x, objectRect.origin.y - 100);
-        NSLog(@"crashed");
-    }
-}
-
 
 
 #pragma mark - AdMob Banner
