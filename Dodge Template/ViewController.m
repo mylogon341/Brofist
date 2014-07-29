@@ -98,10 +98,10 @@ int lol;
     
     if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
         if(screenSize.height >480.0f){
-            menu= CGRectMake(17,79,287,270);
+            menu= CGRectMake(17,79,287,360);
         }
         else{
-            menu= CGRectMake(17,56,287,270);
+            menu= CGRectMake(17,56,287,360);
         }
         
     }
@@ -114,8 +114,6 @@ int lol;
                          
                      }];
     
-    // [credits addTarget:self action:@selector(credits) forControlEvents:UIControlEventTouchUpInside];
-    
     
 }
 - (IBAction)play:(id)sender {
@@ -124,7 +122,6 @@ int lol;
     score = startScore;
     _scoreLabel.text = @"0";
     
-    
     difficulty = 4.0;
     
     if(gameTimer)
@@ -132,6 +129,7 @@ int lol;
         [gameTimer invalidate];
         gameTimer = nil;
     }
+    _object1.center = CGPointMake(0, -2000);
     [self performSelector:@selector(initObject1) withObject:nil afterDelay:1.5];
     [self initObject2];
     [self initObject3];
@@ -183,6 +181,9 @@ int lol;
         }
         
     }
+    
+    [_object1 setCenter:CGPointMake(arc4random_uniform(320), -220)];
+    [self coll];
     
     [button removeFromSuperview];
     speed = 1;
@@ -394,7 +395,12 @@ int lol;
     
     //   socialAlert = 1;
     
-    [self freePointsLoad];
+    int random = arc4random()%2;
+    NSLog(@"%d",random);
+    if (random == 1) {
+        [self performSelector:@selector(freePointsLoad) withObject:nil];
+        //   [self performSelector:@selector(freePointsLoad) withObject:nil afterDelay:0.5];
+    }
     
     [_gameoverView addSubview:button];
     [_gameoverView bringSubviewToFront:button];
@@ -543,63 +549,63 @@ int lol;
             }
         }
         
-    
-
-//twitter
-if (buttonIndex == 2) {
-    {
-        //  Create an instance of the Tweet Sheet
-        SLComposeViewController *tweetSheet = [SLComposeViewController
-                                               composeViewControllerForServiceType:
-                                               SLServiceTypeTwitter];
         
-        // Sets the completion handler.  Note that we don't know which thread the
-        // block will be called on, so we need to ensure that any required UI
-        // updates occur on the main queue
-        tweetSheet.completionHandler = ^(SLComposeViewControllerResult result) {
-            switch(result) {
-                    //  This means the user cancelled without sending the Tweet
-                case SLComposeViewControllerResultDone:
-                {
-                    startScore = 50;
-                    
-                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Success" message:@"You will now start with 50 points. Remember, you can do this as many times as you like!" delegate:self cancelButtonTitle:@"Cool!" otherButtonTitles: nil];
-                    [alert show];
-                    
-                    break;}
-                    //  This means the user hit 'Send'
-                case SLComposeViewControllerResultCancelled:{
-                    
-                }   break;
+        
+        //twitter
+        if (buttonIndex == 2) {
+            {
+                //  Create an instance of the Tweet Sheet
+                SLComposeViewController *tweetSheet = [SLComposeViewController
+                                                       composeViewControllerForServiceType:
+                                                       SLServiceTypeTwitter];
+                
+                // Sets the completion handler.  Note that we don't know which thread the
+                // block will be called on, so we need to ensure that any required UI
+                // updates occur on the main queue
+                tweetSheet.completionHandler = ^(SLComposeViewControllerResult result) {
+                    switch(result) {
+                            //  This means the user cancelled without sending the Tweet
+                        case SLComposeViewControllerResultDone:
+                        {
+                            startScore = 50;
+                            
+                            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Success" message:@"You will now start with 50 points. Remember, you can do this as many times as you like!" delegate:self cancelButtonTitle:@"Cool!" otherButtonTitles: nil];
+                            [alert show];
+                            
+                            break;}
+                            //  This means the user hit 'Send'
+                        case SLComposeViewControllerResultCancelled:{
+                            
+                        }   break;
+                    }
+                };
+                
+                //  Set the initial body of the Tweet
+                [tweetSheet setInitialText:@"Check out BroFist on iOS for FREE!"];
+                
+                //  Adds an image to the Tweet.  For demo purposes, assume we have an
+                //  image named 'larry.png' that we wish to attach
+                if (![tweetSheet addImage:[UIImage imageNamed:@"steelFIST"]]) {
+                    NSLog(@"Unable to add the image!");
+                }
+                
+                //  Add an URL to the Tweet.  You can add multiple URLs.
+                if (![tweetSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"]]){
+                    NSLog(@"Unable to add the URL!");
+                }
+                
+                //  Presents the Tweet Sheet to the user
+                [self presentViewController:tweetSheet animated:NO completion:^{
+                    NSLog(@"Tweet sheet has been presented.");
+                }];
             }
-        };
-        
-        //  Set the initial body of the Tweet
-        [tweetSheet setInitialText:@"Check out BroFist on iOS for FREE!"];
-        
-        //  Adds an image to the Tweet.  For demo purposes, assume we have an
-        //  image named 'larry.png' that we wish to attach
-        if (![tweetSheet addImage:[UIImage imageNamed:@"steelFIST"]]) {
-            NSLog(@"Unable to add the image!");
         }
         
-        //  Add an URL to the Tweet.  You can add multiple URLs.
-        if (![tweetSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"]]){
-            NSLog(@"Unable to add the URL!");
-        }
-        
-        //  Presents the Tweet Sheet to the user
-        [self presentViewController:tweetSheet animated:NO completion:^{
-            NSLog(@"Tweet sheet has been presented.");
-        }];
     }
-}
-
-}
-
-
-
-
+    
+    
+    
+    
 }
 
 - (NSDictionary*)parseURLParams:(NSString *)query {
@@ -632,41 +638,46 @@ if (buttonIndex == 2) {
     int steelX = arc4random_uniform(320) ;
     int h = -(arc4random() %110);
     _object1.center = CGPointMake(steelX, h);
+    
     [self coll];
 }
 
 -(void)coll{
-    if (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object3.frame) || (CGRectIntersectsRect(_object1.frame, _object4.frame) || (CGRectIntersectsRect(_object1.frame, _object5.frame)))))){
-
-        _object1.center = CGPointMake(arc4random_uniform(320), -125);
+    
+    if (_object1.center.y < 20) {
+        
+        if (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object3.frame) || (CGRectIntersectsRect(_object1.frame, _object4.frame) || (CGRectIntersectsRect(_object1.frame, _object5.frame)))))){
+            
+            _object1.center = CGPointMake(arc4random_uniform(320), -160);
+        }
     }
 }
 
 
 -(void)initObject2{
     int r = arc4random_uniform(320) ;
-    int h = -(arc4random() %90);
+    int h = -(arc4random() %120);
     _object2.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject3{
     int r = arc4random_uniform(320) ;
-    int h = -(arc4random() %90);
+    int h = -(arc4random() %120);
     _object3.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject4{
     int r = arc4random_uniform(320);
-    int h = -(arc4random() %90);
+    int h = -(arc4random() %120);
     _object4.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject5{
     int r = arc4random_uniform(320);
-    int h = -(arc4random() %90);
+    int h = -(arc4random() %120);
     _object5.center = CGPointMake(r, h);
     [self coll];
 }
@@ -680,6 +691,7 @@ if (buttonIndex == 2) {
     if ([defaults objectForKey: @"noads"] != nil &&
         [[defaults objectForKey: @"noads"] isEqualToString: @"YES"]) {
         self.banner.hidden = YES;
+        
     }
     else {
         self.banner.hidden = NO;
