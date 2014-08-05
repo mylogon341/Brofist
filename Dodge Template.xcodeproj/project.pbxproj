@@ -13,6 +13,8 @@
 		180ED3B3195E3ACA005BB26A /* brofist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180ED3AE195E3ACA005BB26A /* brofist@2x.png */; };
 		180ED3B4195E3ACA005BB26A /* steelFIST@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180ED3AF195E3ACA005BB26A /* steelFIST@2x.png */; };
 		181C42A71961AEC1006E8FBE /* Chempo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181C42A61961AEC1006E8FBE /* Chempo@2x.png */; };
+		1864A41A1990FE5800E55F0C /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1864A4191990FE5800E55F0C /* share@2x.png */; };
+		1869EBD9198BEB1D0065D0EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869EBD8198BEB1D0065D0EC /* Security.framework */; };
 		189350B3195EE3D4001903AF /* debussy.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 189350B2195EE1F2001903AF /* debussy.TTF */; };
 		189350C5195EE997001903AF /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 189350B5195EE997001903AF /* AppIcon29x29.png */; };
 		189350C6195EE997001903AF /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189350B6195EE997001903AF /* AppIcon29x29@2x.png */; };
@@ -87,6 +89,8 @@
 		180ED3AE195E3ACA005BB26A /* brofist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brofist@2x.png"; sourceTree = "<group>"; };
 		180ED3AF195E3ACA005BB26A /* steelFIST@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steelFIST@2x.png"; sourceTree = "<group>"; };
 		181C42A61961AEC1006E8FBE /* Chempo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chempo@2x.png"; sourceTree = "<group>"; };
+		1864A4191990FE5800E55F0C /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@2x.png"; sourceTree = "<group>"; };
+		1869EBD8198BEB1D0065D0EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		189350B2195EE1F2001903AF /* debussy.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = debussy.TTF; sourceTree = "<group>"; };
 		189350B5195EE997001903AF /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
 		189350B6195EE997001903AF /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1869EBD9198BEB1D0065D0EC /* Security.framework in Frameworks */,
 				3C65BA7C19815EE900B7C300 /* Twitter.framework in Frameworks */,
 				3C83E95D1981591A00BBD3F2 /* Social.framework in Frameworks */,
 				F5C33CCA1949024D008426D2 /* AdSupport.framework in Frameworks */,
@@ -253,6 +258,7 @@
 			children = (
 				189350D7195EED8C001903AF /* i4-4s.png */,
 				181C42A61961AEC1006E8FBE /* Chempo@2x.png */,
+				1864A4191990FE5800E55F0C /* share@2x.png */,
 				189350D5195EED87001903AF /* i5.png */,
 				18FAB6AB1960DDDF00A984CF /* back@2x.png */,
 				18FAB6AC1960DDDF00A984CF /* credits@2x.png */,
@@ -293,6 +299,7 @@
 		ACF24A3D192BE96100DCAC59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1869EBD8198BEB1D0065D0EC /* Security.framework */,
 				3C65BA7D19816A9600B7C300 /* FacebookSDK.framework */,
 				3C65BA7B19815EE900B7C300 /* Twitter.framework */,
 				3C83E95C1981591A00BBD3F2 /* Social.framework */,
@@ -462,6 +469,7 @@
 			files = (
 				189350B3195EE3D4001903AF /* debussy.TTF in Resources */,
 				180ED3B1195E3ACA005BB26A /* bg-i5.png in Resources */,
+				1864A41A1990FE5800E55F0C /* share@2x.png in Resources */,
 				ACF24A76192BE9BB00DCAC59 /* Images.xcassets in Resources */,
 				189350CF195EE997001903AF /* AppIcon72x72.png in Resources */,
 				189350CB195EE997001903AF /* AppIcon57x57.png in Resources */,
@@ -616,7 +624,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D963FEA0-F4ED-44CD-B302-2B34663EDC76";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -735,7 +743,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D963FEA0-F4ED-44CD-B302-2B34663EDC76";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -762,7 +770,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D963FEA0-F4ED-44CD-B302-2B34663EDC76";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

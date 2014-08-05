@@ -391,7 +391,7 @@ int lol;
                          
                      }];
     
-    socialAlert = [[defaults objectForKey:@"alert"]intValue];
+    // socialAlert = [[defaults objectForKey:@"alert"]intValue];
     
     //   socialAlert = 1;
     
@@ -423,7 +423,7 @@ int lol;
     socialAlert = [[defaults objectForKey:@"alert"]intValue];
     NSLog(@"%i",socialAlert);
     
-    //   socialAlert = 1;
+       socialAlert = 1;
     
     if (socialAlert != 2) {
         
@@ -486,7 +486,7 @@ int lol;
             
             // Check if the Facebook app is installed and we can present the share dialog
             FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-            params.link = [NSURL URLWithString:@"https://developers.facebook.com/docs/ios/share/"];
+            params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
             
             // If the Facebook app is installed and we can present the share dialog
             if ([FBDialogs canPresentShareDialogWithParams:params]) {
@@ -512,7 +512,7 @@ int lol;
                 NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                                @"BroFist", @"name",
                                                @"How Many BroFists Can You Give?", @"caption",
-                                               @"Get BroFist today for free on iOS and compete against friends. Who will get the global High Score?!", @"description",
+                                               @"Get BroFist today for FREE on iOS and compete against friends. Who will get the global High Score?!", @"description",
                                                @"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8", @"link",
                                                @"http://a5.mzstatic.com/us/r30/Purple4/v4/c4/77/28/c477287c-ba75-44e0-faca-4a65147b186a/mzl.zdzbmeob.175x175-75.jpg", @"picture",
                                                nil];
@@ -581,11 +581,11 @@ int lol;
                 };
                 
                 //  Set the initial body of the Tweet
-                [tweetSheet setInitialText:@"Check out BroFist on iOS for FREE!"];
+                [tweetSheet setInitialText:@"I am playing BroFist the Game on iOS for FREE! #Brofist"];
                 
                 //  Adds an image to the Tweet.  For demo purposes, assume we have an
                 //  image named 'larry.png' that we wish to attach
-                if (![tweetSheet addImage:[UIImage imageNamed:@"steelFIST"]]) {
+                if (![tweetSheet addImage:[UIImage imageNamed:@"brofist"]]) {
                     NSLog(@"Unable to add the image!");
                 }
                 
