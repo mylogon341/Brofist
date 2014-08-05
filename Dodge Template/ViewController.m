@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 #import <AudioToolbox/AudioToolbox.h>
 
 #define kRemoveAdsProductIdentifier @"BrofistNoAds"
@@ -391,15 +392,11 @@ int lol;
                          
                      }];
     
-    // socialAlert = [[defaults objectForKey:@"alert"]intValue];
+    socialTen ++;
     
-    //   socialAlert = 1;
-    
-    int random = arc4random()%2;
-    NSLog(@"%d",random);
-    if (random == 1) {
-        [self performSelector:@selector(freePointsLoad) withObject:nil];
-        //   [self performSelector:@selector(freePointsLoad) withObject:nil afterDelay:0.5];
+    if (socialTen == 10) {
+        socialTen = 0;
+    [self performSelector:@selector(freePointsLoad) withObject:nil afterDelay:0.5];
     }
     
     [_gameoverView addSubview:button];

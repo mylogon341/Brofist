@@ -14,7 +14,7 @@
     // Override point for customization after application launch.
     [[GameCenterManager sharedManager]setupManager];
     [[MylogonAudio sharedInstance]playBackgroundMusic:@"bg.mp3"];
-
+    socialTen = 5;
     return YES;
 }
 							

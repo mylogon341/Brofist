@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GameCenterManager.h"
-
+int socialTen;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
