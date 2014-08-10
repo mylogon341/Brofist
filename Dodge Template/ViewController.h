@@ -18,6 +18,8 @@ BOOL go;
 @interface ViewController : UIViewController <GADBannerViewDelegate, SKProductsRequestDelegate,SKPaymentTransactionObserver, GameCenterManagerDelegate>{
     float speed;
 
+    GADBannerView *bannerView_;
+
     NSArray * objectsArray;
     IBOutlet UIButton *credits;
     UIButton * button;
@@ -38,7 +40,6 @@ BOOL go;
 @property (strong, nonatomic) IBOutlet UIImageView *object4;
 @property (strong, nonatomic) IBOutlet UIImageView *object5;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet GADBannerView *banner;
 @property (weak, nonatomic) IBOutlet UIView *gameoverView;
 @property (weak, nonatomic) IBOutlet UILabel *finalScore;
 @property (weak, nonatomic) IBOutlet UILabel *bestScore;

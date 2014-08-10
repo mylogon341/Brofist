@@ -58,14 +58,21 @@ int lol;
     _connecting.hidden = YES;
     [[GameCenterManager sharedManager] setDelegate:self];
     
-    self.banner.adUnitID = adID;
     
     objectsArray = [NSArray arrayWithObjects:_object1,_object2,_object3,_object4,_object5, nil];
     
-    self.banner.delegate = self;
-    self.banner.rootViewController = self;
-    [self.banner loadRequest: [GADRequest request]];
+    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
+    // Specify the ad unit ID.
+    bannerView_.adUnitID = adID;
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
     gameState = kGameStateMenu;
     
     
@@ -687,16 +694,16 @@ int lol;
     
     if ([defaults objectForKey: @"noads"] != nil &&
         [[defaults objectForKey: @"noads"] isEqualToString: @"YES"]) {
-        self.banner.hidden = YES;
+        bannerView_.hidden = YES;
         
     }
     else {
-        self.banner.hidden = NO;
+        bannerView_.hidden = NO;
     }
 }
 
 - (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError: (GADRequestError *)error {
-    self.banner.hidden = YES;
+    bannerView_.hidden = YES;
 }
 
 
@@ -838,7 +845,7 @@ int lol;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"YES"forKey:@"noads"];
     [defaults synchronize];
-    self.banner.hidden = YES;
+    bannerView_.hidden = YES;
 }
 
 #pragma mark - GAME CENTER

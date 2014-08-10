@@ -20,12 +20,6 @@
 	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.1</string>
-	<key>FacebookAppID</key>
-	<string>278206135714903</string>
-	<key>FacebookDisplayName</key>
-	<string>Brofist The Game</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -35,6 +29,12 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>FacebookAppID</key>
+	<string>278206135714903</string>
+	<key>FacebookDisplayName</key>
+	<string>Brofist The Game</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
