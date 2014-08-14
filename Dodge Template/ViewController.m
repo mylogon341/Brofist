@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "GADRequest.h"
 #import "AppDelegate.h"
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -47,21 +48,21 @@ int lol;
 -(BOOL)prefersStatusBarHidden{
     return YES;
 }
+-(void)viewDidLayoutSubviews{
+    
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     speed = 1;
     
-    startScore = 0;
-    
-    _connecting.hidden = YES;
-    [[GameCenterManager sharedManager] setDelegate:self];
-    
-    
-    objectsArray = [NSArray arrayWithObjects:_object1,_object2,_object3,_object4,_object5, nil];
-    
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+ 
+    [bannerView_ setDelegate:self];
+    
+    startScore = 0;
     
     // Specify the ad unit ID.
     bannerView_.adUnitID = adID;
@@ -71,10 +72,19 @@ int lol;
     bannerView_.rootViewController = self;
     [self.view addSubview:bannerView_];
     
-    // Initiate a generic request to load it with an ad.
     [bannerView_ loadRequest:[GADRequest request]];
-    gameState = kGameStateMenu;
     
+    
+    
+    // Initiate a generic request to load it with an ad.
+    
+    gameState = kGameStateMenu;
+    _connecting.hidden = YES;
+    
+    [[GameCenterManager sharedManager] setDelegate:self];
+    
+    
+    objectsArray = [NSArray arrayWithObjects:_object1,_object2,_object3,_object4,_object5, nil];
     
     _scoreLabel.font = [UIFont fontWithName:@"debussy" size:35];
     _scoreLabel.textColor = [UIColor whiteColor];
@@ -403,7 +413,7 @@ int lol;
     
     if (socialTen == 10) {
         socialTen = 0;
-    [self performSelector:@selector(freePointsLoad) withObject:nil afterDelay:0.5];
+        [self performSelector:@selector(freePointsLoad) withObject:nil afterDelay:0.5];
     }
     
     [_gameoverView addSubview:button];
@@ -427,7 +437,7 @@ int lol;
     socialAlert = [[defaults objectForKey:@"alert"]intValue];
     NSLog(@"%i",socialAlert);
     
-       socialAlert = 1;
+    socialAlert = 1;
     
     if (socialAlert != 2) {
         
@@ -691,7 +701,6 @@ int lol;
 
 - (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
     if ([defaults objectForKey: @"noads"] != nil &&
         [[defaults objectForKey: @"noads"] isEqualToString: @"YES"]) {
         bannerView_.hidden = YES;

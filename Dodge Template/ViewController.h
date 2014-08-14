@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GADBannerView.h"
+#import "GADBannerViewDelegate.h"
 #import <StoreKit/StoreKit.h>
 #import "GameCenterManager.h"
 #import "MylogonAudio.h"
