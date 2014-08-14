@@ -59,7 +59,7 @@ int lol;
     speed = 1;
     
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
- 
+    
     [bannerView_ setDelegate:self];
     
     startScore = 0;
