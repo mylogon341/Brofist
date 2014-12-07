@@ -98,12 +98,14 @@ int lol;
     
     [[GameCenterManager sharedManager] setDelegate:self];
     
-    [self fistScale:_object1];
-    [self fistScale:_object2];
-    [self fistScale:_object3];
-    [self fistScale:_object4];
-    [self fistScale:_object5];
-
+    if (isiPad) {
+        
+        [self fistScale:_object1];
+        [self fistScale:_object2];
+        [self fistScale:_object3];
+        [self fistScale:_object4];
+        [self fistScale:_object5];
+    }
     
     objectsArray = [NSArray arrayWithObjects:_object1,_object2,_object3,_object4,_object5, nil];
     
@@ -122,7 +124,7 @@ int lol;
 
 -(void)fistScale:(UIImageView* )fist{
     
-    fist.frame = CGRectMake(0, 0, 90 * (screenSize.width/ 400), 90 * (screenSize.width/ 400));
+    fist.frame = CGRectMake(0, -150, 90 * (screenSize.width/ 400), 90 * (screenSize.width/ 400));
     
 }
 
@@ -178,6 +180,7 @@ int lol;
     _scoreLabel.hidden = NO;
     score = startScore;
     _scoreLabel.text = @"0";
+    _hero.center = CGPointMake(-200, 0);
     
     _scoreLabel.center = CGPointMake(screenSize.width/2, 90);
     
@@ -319,11 +322,12 @@ int lol;
         }
         
         //check collision
-        CGRect heroRect = CGRectMake(_hero.frame.origin.x, _hero.frame.origin.y, _hero.frame.size.width - 15 , _hero.frame.size.height - 50);
+        CGRect heroRect = CGRectMake(_hero.frame.origin.x + 7, _hero.frame.origin.y + 7, _hero.frame.size.width - 14 , _hero.frame.size.height - 50);
         
-        if(CGRectIntersectsRect(heroRect, _object1.frame)){
+        if(CGRectIntersectsRect(heroRect, CGRectMake(_object1.frame.origin.x + 15, _object1.frame.origin.y +15, _object1.frame.size.width- 30, _object1.frame.size.height - 30))){
             gameState = kGameStateOver;
             [self gameOver];
+            
         }
         
         if(CGRectIntersectsRect(heroRect, _object2.frame)){
@@ -658,7 +662,7 @@ int lol;
 
 -(void)initObject1{
     int steelX = arc4random_uniform(screenSize.width) ;
-    int h = -(arc4random() %110);
+    int h = -(arc4random() %110) + 20;
     _object1.center = CGPointMake(steelX, h);
     
     [self coll];
@@ -678,28 +682,28 @@ int lol;
 
 -(void)initObject2{
     int r = arc4random_uniform(screenSize.width) ;
-    int h = -(arc4random() %120);
+    int h = -(arc4random() %120 + 20);
     _object2.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject3{
     int r = arc4random_uniform(screenSize.width) ;
-    int h = -(arc4random() %120);
+    int h = -(arc4random() %120 + 20);
     _object3.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject4{
     int r = arc4random_uniform(screenSize.width);
-    int h = -(arc4random() %120);
+    int h = -(arc4random() %120 + 20);
     _object4.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject5{
     int r = arc4random_uniform(screenSize.width);
-    int h = -(arc4random() %120);
+    int h = -(arc4random() %120 + 20);
     _object5.center = CGPointMake(r, h);
     [self coll];
 }

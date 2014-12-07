@@ -626,12 +626,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-=======
-				PROVISIONING_PROFILE = "4077B72F-B0BA-447F-9536-6BA7285DFBB3";
->>>>>>> FETCH_HEAD
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -752,12 +748,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-=======
-				PROVISIONING_PROFILE = "4077B72F-B0BA-447F-9536-6BA7285DFBB3";
->>>>>>> FETCH_HEAD
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -786,12 +778,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-=======
-				PROVISIONING_PROFILE = "4077B72F-B0BA-447F-9536-6BA7285DFBB3";
->>>>>>> FETCH_HEAD
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

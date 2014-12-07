@@ -28,6 +28,8 @@ BOOL go;
     IBOutlet UIImageView *bgImage;
     IBOutlet UIImageView *groundImage;
     
+    
+    
     CGSize screenSize;
     
     int socialAlert;
