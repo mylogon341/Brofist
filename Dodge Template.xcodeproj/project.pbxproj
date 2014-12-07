@@ -41,6 +41,7 @@
 		3C65BA7E19816A9600B7C300 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C65BA7D19816A9600B7C300 /* FacebookSDK.framework */; };
 		3C83E95D1981591A00BBD3F2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C83E95C1981591A00BBD3F2 /* Social.framework */; };
 		3C937346195DD96900D22E55 /* MylogonAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C937345195DD96900D22E55 /* MylogonAudio.m */; };
+		3C99C5401A34B83D00823898 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C99C53F1A34B83D00823898 /* libGoogleAdMobAds.a */; };
 		AC625243192BEAE000034F59 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC62523C192BEAE000034F59 /* GameCenterManager.m */; };
 		AC625244192BEAE000034F59 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = AC62523E192BEAE000034F59 /* NSDataAES256.m */; };
 		AC625245192BEAE000034F59 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC625240192BEAE000034F59 /* Reachability.m */; };
@@ -64,7 +65,6 @@
 		ACF24A96192BE9D000DCAC59 /* 8-BIT WONDER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = ACF24A85192BE9D000DCAC59 /* 8-BIT WONDER.TTF */; };
 		ACF24A97192BE9D000DCAC59 /* deadSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACF24A86192BE9D000DCAC59 /* deadSound.mp3 */; };
 		ACF24A98192BE9D000DCAC59 /* point.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACF24A87192BE9D000DCAC59 /* point.mp3 */; };
-		F5C33CC819490216008426D2 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C33CC719490216008426D2 /* libGoogleAdMobAds.a */; };
 		F5C33CCA1949024D008426D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C33CC91949024D008426D2 /* AdSupport.framework */; };
 		F5C33CCC19490269008426D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C33CCB19490269008426D2 /* AVFoundation.framework */; };
 		F5C33CCE1949027F008426D2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C33CCD1949027F008426D2 /* CoreTelephony.framework */; };
@@ -119,6 +119,19 @@
 		3C83E95C1981591A00BBD3F2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3C937344195DD96900D22E55 /* MylogonAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MylogonAudio.h; sourceTree = "<group>"; };
 		3C937345195DD96900D22E55 /* MylogonAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MylogonAudio.m; sourceTree = "<group>"; };
+		3C99C5331A34B83D00823898 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		3C99C5341A34B83D00823898 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		3C99C5351A34B83D00823898 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		3C99C5361A34B83D00823898 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		3C99C5371A34B83D00823898 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		3C99C5381A34B83D00823898 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
+		3C99C5391A34B83D00823898 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
+		3C99C53A1A34B83D00823898 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		3C99C53B1A34B83D00823898 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		3C99C53C1A34B83D00823898 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
+		3C99C53D1A34B83D00823898 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		3C99C53E1A34B83D00823898 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		3C99C53F1A34B83D00823898 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		AC62523B192BEAE000034F59 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		AC62523C192BEAE000034F59 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		AC62523D192BEAE000034F59 /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
@@ -151,19 +164,6 @@
 		ACF24A85192BE9D000DCAC59 /* 8-BIT WONDER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-BIT WONDER.TTF"; sourceTree = "<group>"; };
 		ACF24A86192BE9D000DCAC59 /* deadSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deadSound.mp3; sourceTree = "<group>"; };
 		ACF24A87192BE9D000DCAC59 /* point.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = point.mp3; sourceTree = "<group>"; };
-		F5C33CBB19490216008426D2 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
-		F5C33CBC19490216008426D2 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
-		F5C33CBD19490216008426D2 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
-		F5C33CBE19490216008426D2 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
-		F5C33CBF19490216008426D2 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
-		F5C33CC019490216008426D2 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
-		F5C33CC119490216008426D2 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
-		F5C33CC219490216008426D2 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
-		F5C33CC319490216008426D2 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
-		F5C33CC419490216008426D2 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
-		F5C33CC519490216008426D2 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
-		F5C33CC619490216008426D2 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
-		F5C33CC719490216008426D2 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		F5C33CC91949024D008426D2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F5C33CCB19490269008426D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F5C33CCD1949027F008426D2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -177,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1869EBD9198BEB1D0065D0EC /* Security.framework in Frameworks */,
+				3C99C5401A34B83D00823898 /* libGoogleAdMobAds.a in Frameworks */,
 				3C65BA7C19815EE900B7C300 /* Twitter.framework in Frameworks */,
 				3C83E95D1981591A00BBD3F2 /* Social.framework in Frameworks */,
 				F5C33CCA1949024D008426D2 /* AdSupport.framework in Frameworks */,
@@ -187,7 +188,6 @@
 				F5C33CD01949028A008426D2 /* MessageUI.framework in Frameworks */,
 				AC62524E192BEB6500034F59 /* StoreKit.framework in Frameworks */,
 				F5C33CD219490299008426D2 /* SystemConfiguration.framework in Frameworks */,
-				F5C33CC819490216008426D2 /* libGoogleAdMobAds.a in Frameworks */,
 				3C65BA7E19816A9600B7C300 /* FacebookSDK.framework in Frameworks */,
 				AC62524A192BEB3200034F59 /* GameKit.framework in Frameworks */,
 				ACF24A43192BE96100DCAC59 /* UIKit.framework in Frameworks */,
@@ -371,19 +371,19 @@
 		F5C33CBA19490216008426D2 /* AdMob */ = {
 			isa = PBXGroup;
 			children = (
-				F5C33CBB19490216008426D2 /* GADAdMobExtras.h */,
-				F5C33CBC19490216008426D2 /* GADAdNetworkExtras.h */,
-				F5C33CBD19490216008426D2 /* GADAdSize.h */,
-				F5C33CBE19490216008426D2 /* GADBannerView.h */,
-				F5C33CBF19490216008426D2 /* GADBannerViewDelegate.h */,
-				F5C33CC019490216008426D2 /* GADInAppPurchase.h */,
-				F5C33CC119490216008426D2 /* GADInAppPurchaseDelegate.h */,
-				F5C33CC219490216008426D2 /* GADInterstitial.h */,
-				F5C33CC319490216008426D2 /* GADInterstitialDelegate.h */,
-				F5C33CC419490216008426D2 /* GADModules.h */,
-				F5C33CC519490216008426D2 /* GADRequest.h */,
-				F5C33CC619490216008426D2 /* GADRequestError.h */,
-				F5C33CC719490216008426D2 /* libGoogleAdMobAds.a */,
+				3C99C5331A34B83D00823898 /* GADAdMobExtras.h */,
+				3C99C5341A34B83D00823898 /* GADAdNetworkExtras.h */,
+				3C99C5351A34B83D00823898 /* GADAdSize.h */,
+				3C99C5361A34B83D00823898 /* GADBannerView.h */,
+				3C99C5371A34B83D00823898 /* GADBannerViewDelegate.h */,
+				3C99C5381A34B83D00823898 /* GADInAppPurchase.h */,
+				3C99C5391A34B83D00823898 /* GADInAppPurchaseDelegate.h */,
+				3C99C53A1A34B83D00823898 /* GADInterstitial.h */,
+				3C99C53B1A34B83D00823898 /* GADInterstitialDelegate.h */,
+				3C99C53C1A34B83D00823898 /* GADModules.h */,
+				3C99C53D1A34B83D00823898 /* GADRequest.h */,
+				3C99C53E1A34B83D00823898 /* GADRequestError.h */,
+				3C99C53F1A34B83D00823898 /* libGoogleAdMobAds.a */,
 			);
 			path = AdMob;
 			sourceTree = "<group>";
@@ -584,8 +584,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Hernandez (A6TWDU6J28)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Hernandez (A6TWDU6J28)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marko Popov (SS72589PZK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marko Popov (SS72589PZK)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -596,7 +596,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "7943F81E-73CA-4E57-BCC5-AA29244C27FF";
+				PROVISIONING_PROFILE = "4077B72F-B0BA-447F-9536-6BA7285DFBB3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -608,7 +608,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marko Popov (SS72589PZK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -621,10 +621,13 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Dodge Template\"",
 					"\"$(PROJECT_DIR)/Dodge Template/Admob\"",
+					"$(PROJECT_DIR)/Dodge",
+					Template/AdMob,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "D963FEA0-F4ED-44CD-B302-2B34663EDC76";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -663,8 +666,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Hernandez (A6TWDU6J28)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Hernandez (A6TWDU6J28)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marko Popov (SS72589PZK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marko Popov (SS72589PZK)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -682,7 +685,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "7943F81E-73CA-4E57-BCC5-AA29244C27FF";
+				PROVISIONING_PROFILE = "4077B72F-B0BA-447F-9536-6BA7285DFBB3";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -703,8 +706,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Hernandez (A6TWDU6J28)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Hernandez (A6TWDU6J28)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marko Popov (SS72589PZK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marko Popov (SS72589PZK)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -715,7 +718,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "7943F81E-73CA-4E57-BCC5-AA29244C27FF";
+				PROVISIONING_PROFILE = "4077B72F-B0BA-447F-9536-6BA7285DFBB3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -727,7 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marko Popov (RF7SSPLW85)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -740,10 +743,13 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Dodge Template\"",
 					"\"$(PROJECT_DIR)/Dodge Template/Admob\"",
+					"$(PROJECT_DIR)/Dodge",
+					Template/AdMob,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "D963FEA0-F4ED-44CD-B302-2B34663EDC76";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -754,7 +760,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marko Popov (SS72589PZK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -767,10 +773,13 @@
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/Dodge Template\"",
 					"\"$(PROJECT_DIR)/Dodge Template/Admob\"",
+					"$(PROJECT_DIR)/Dodge",
+					Template/AdMob,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "D963FEA0-F4ED-44CD-B302-2B34663EDC76";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

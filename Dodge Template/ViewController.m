@@ -56,6 +56,21 @@ int lol;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *deviceType = [UIDevice currentDevice].model;
+
+    if ([deviceType hasPrefix:@"iPad"]) {
+        isiPad = YES;
+    }else{
+        isiPad = NO;
+    }
+    
+    screenSize = [[UIScreen mainScreen] bounds].size;
+
+    _titleView.center = CGPointMake(screenSize.width/2, screenSize.height - 400);
+    _gameoverView.center = CGPointMake(screenSize.width/2, screenSize.height + 400);
+
+    
     speed = 1;
     
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
@@ -74,7 +89,7 @@ int lol;
     
     [bannerView_ loadRequest:[GADRequest request]];
     
-    
+    bannerView_.center = CGPointMake(screenSize.width/2, bannerView_.frame.size.height/2);
     
     // Initiate a generic request to load it with an ad.
     
@@ -83,6 +98,12 @@ int lol;
     
     [[GameCenterManager sharedManager] setDelegate:self];
     
+    [self fistScale:_object1];
+    [self fistScale:_object2];
+    [self fistScale:_object3];
+    [self fistScale:_object4];
+    [self fistScale:_object5];
+
     
     objectsArray = [NSArray arrayWithObjects:_object1,_object2,_object3,_object4,_object5, nil];
     
@@ -99,6 +120,12 @@ int lol;
     [self menu];
 }
 
+-(void)fistScale:(UIImageView* )fist{
+    
+    fist.frame = CGRectMake(0, 0, 90 * (screenSize.width/ 400), 90 * (screenSize.width/ 400));
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -108,23 +135,35 @@ int lol;
 -(void)menu{
     _scoreLabel.hidden = YES;
     _instructions.hidden = NO;
-    [self resetHero];
-    CGRect menu;
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+     CGRect menu;
     
+    bgImage.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
+    groundImage.frame = CGRectMake(0, 0, screenSize.width, 60);
+    
+    
+   // [self resetHero];
+   
     go = NO;
-    
-    if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-        if(screenSize.height >480.0f){
-            menu= CGRectMake(17,79,287,360);
-        }
-        else{
-            menu= CGRectMake(17,56,287,360);
-        }
         
-    }
     
-    [UIView animateWithDuration: 1.0f
+    if (isiPad) {
+        menu = CGRectMake(screenSize.width/2 - 287/2, screenSize.height/2 - 180, 287, 360);
+    
+    
+    }else{
+        
+        
+        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+            if(screenSize.height >480.0f){
+                menu= CGRectMake(17,79,287,360);
+            }
+            else{
+                menu= CGRectMake(17,56,287,360);
+            }
+            
+        }
+    }
+    [UIView animateWithDuration: 0.5f
                      animations:^{
                          _titleView.frame = menu;
                      }
@@ -140,6 +179,8 @@ int lol;
     score = startScore;
     _scoreLabel.text = @"0";
     
+    _scoreLabel.center = CGPointMake(screenSize.width/2, 90);
+    
     difficulty = 4.0;
     
     if(gameTimer)
@@ -153,22 +194,28 @@ int lol;
     [self initObject3];
     [self initObject4];
     [self initObject5];
-    [self resetHero];
+   // [self resetHero];
     gameState = kGameStateRunning;
     
     CGRect menu;
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
     
-    if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-        if(screenSize.height >480.0f){
-            menu= CGRectMake(17,700,287,270);
-        }
-        else{
-            menu= CGRectMake(17,600,287,270);
+    if (isiPad) {
+        
+        menu = CGRectMake(screenSize.width/2 - 287/2, screenSize.height + 100, 287, 270);
+        
+    }else{
+        
+        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+            if(screenSize.height >480.0f){
+                menu= CGRectMake(17,700,287,270);
+            }
+            else{
+                menu= CGRectMake(17,600,287,270);
+            }
+            
         }
         
     }
-    
     [UIView animateWithDuration: 1.0f
                      animations:^{
                          _titleView.frame = menu;
@@ -189,15 +236,20 @@ int lol;
 - (IBAction)retry:(id)sender {
     CGRect done;
     go = NO;
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-        if(screenSize.height >480.0f){
-            done = CGRectMake(16,700,280,286);
-        }
-        else{
-            done = CGRectMake(16,600,280,286);
-        }
+
+    if (isiPad) {
+        done = CGRectMake(screenSize.width/2 - 140, screenSize.height + 400, 280, 286);
+    }else{
         
+        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+            if(screenSize.height >480.0f){
+                done = CGRectMake(16,700,280,286);
+            }
+            else{
+                done = CGRectMake(16,600,280,286);
+            }
+            
+        }
     }
     
     [_object1 setCenter:CGPointMake(arc4random_uniform(320), -220)];
@@ -242,26 +294,26 @@ int lol;
     if(gameState == kGameStateRunning ){
         
         
-        if(_object1.center.y > 660){
+        if(_object1.center.y > screenSize.height + 100){
             [self initObject1];
         }
         
-        if(_object2.center.y > 660){
+        if(_object2.center.y > screenSize.height + 100){
             gameState = kGameStateOver;
             [self gameOver];
         }
         
-        if(_object3.center.y > 660){
+        if(_object3.center.y > screenSize.height + 100){
             gameState = kGameStateOver;
             [self gameOver];
         }
         
-        if(_object4.center.y > 660){
+        if(_object4.center.y > screenSize.height + 100){
             gameState = kGameStateOver;
             [self gameOver];
         }
         
-        if(_object5.center.y > 660){
+        if(_object5.center.y > screenSize.height + 100){
             gameState = kGameStateOver;
             [self gameOver];
         }
@@ -333,44 +385,6 @@ int lol;
     go = YES;
     
     
-    CGRect heroRect;
-    
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-        if(screenSize.height >480.0f){
-            heroRect = CGRectMake(_hero.frame.origin.x,700,39,48);
-        }
-        else{
-            heroRect = CGRectMake(_hero.frame.origin.x,600,39,48);
-        }
-        
-    }
-    
-    
-    CGRect heroUp = CGRectMake(_hero.frame.origin.x, _hero.frame.origin.y - 30, _hero.frame.size.width, _hero.frame.size.height);
-    
-    [UIView animateWithDuration: 0.2f
-                          delay: 0.0f
-                        options: UIViewAnimationOptionCurveEaseIn
-                     animations:^{
-                         _hero.frame = heroUp;
-                     }
-                     completion:^(BOOL finished){
-                         [UIView animateWithDuration: 0.5f
-                                               delay: 0.1f
-                                             options: UIViewAnimationOptionCurveEaseIn
-                                          animations:^{
-                                              _hero.frame = heroRect;
-                                          }
-                                          completion:^(BOOL finished){
-                                              // [self gameOver];
-                                          }];
-                     }];
-    
-    
-    
-    
-    
     _finalScore.text = [NSString stringWithFormat:@"%i", score];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -389,6 +403,13 @@ int lol;
     
     CGRect gameOver;
     
+    if (isiPad) {
+        
+        gameOver= CGRectMake(screenSize.width/2 - 140, screenSize.height/2 - 200, 280, 400);
+        
+    }else{
+    
+    
     if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
         if(screenSize.height >480.0f){
             gameOver= CGRectMake(20,88,280,400);
@@ -399,7 +420,7 @@ int lol;
         }
         
     }
-    
+    }
     
     [UIView animateWithDuration: 1.0f
                      animations:^{
@@ -499,27 +520,27 @@ int lol;
             
             
             // Check if the Facebook app is installed and we can present the share dialog
-            FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-            params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
+           // FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
+//            params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
             
             // If the Facebook app is installed and we can present the share dialog
-            if ([FBDialogs canPresentShareDialogWithParams:params]) {
-                
-                // Present share dialog
-                [FBDialogs presentShareDialogWithLink:params.link
-                                              handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-                                                  if(error) {
-                                                      // An error occurred, we need to handle the error
-                                                      // See: https://developers.facebook.com/docs/ios/errors
-                                                      NSLog(@"Error publishing story: %@", error.description);
-                                                  } else {
-                                                      // Success
-                                                      NSLog(@"result %@", results);
-                                                  }
-                                              }];
-                
-                // If the Facebook app is NOT installed and we can't present the share dialog
-            } else {
+//            if ([FBDialogs canPresentShareDialogWithParams:params]) {
+//                
+//                // Present share dialog
+//                [FBDialogs presentShareDialogWithLink:params.link
+//                                              handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+//                                                  if(error) {
+//                                                      // An error occurred, we need to handle the error
+//                                                      // See: https://developers.facebook.com/docs/ios/errors
+//                                                      NSLog(@"Error publishing story: %@", error.description);
+//                                                  } else {
+//                                                      // Success
+//                                                      NSLog(@"result %@", results);
+//                                                  }
+//                                              }];
+//                
+//                // If the Facebook app is NOT installed and we can't present the share dialog
+//            } else {
                 // FALLBACK: publish just a link using the Feed dialog
                 
                 // Put together the dialog parameters
@@ -617,10 +638,7 @@ int lol;
         
     }
     
-    
-    
-    
-}
+
 
 - (NSDictionary*)parseURLParams:(NSString *)query {
     NSArray *pairs = [query componentsSeparatedByString:@"&"];
@@ -636,20 +654,10 @@ int lol;
 
 
 #pragma mark - INIT OBJECTS
--(void)resetHero{
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-        if(screenSize.height >480.0f){
-            _hero.frame = CGRectMake(141,399,39,48);
-        }
-        else{
-            _hero.frame = CGRectMake(141,331,39,48);
-        }
-    }
-}
+
 
 -(void)initObject1{
-    int steelX = arc4random_uniform(320) ;
+    int steelX = arc4random_uniform(screenSize.width) ;
     int h = -(arc4random() %110);
     _object1.center = CGPointMake(steelX, h);
     
@@ -662,35 +670,35 @@ int lol;
         
         if (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object2.frame) || (CGRectIntersectsRect(_object1.frame, _object3.frame) || (CGRectIntersectsRect(_object1.frame, _object4.frame) || (CGRectIntersectsRect(_object1.frame, _object5.frame)))))){
             
-            _object1.center = CGPointMake(arc4random_uniform(320), -160);
+            _object1.center = CGPointMake(arc4random_uniform(screenSize.width), -160);
         }
     }
 }
 
 
 -(void)initObject2{
-    int r = arc4random_uniform(320) ;
+    int r = arc4random_uniform(screenSize.width) ;
     int h = -(arc4random() %120);
     _object2.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject3{
-    int r = arc4random_uniform(320) ;
+    int r = arc4random_uniform(screenSize.width) ;
     int h = -(arc4random() %120);
     _object3.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject4{
-    int r = arc4random_uniform(320);
+    int r = arc4random_uniform(screenSize.width);
     int h = -(arc4random() %120);
     _object4.center = CGPointMake(r, h);
     [self coll];
 }
 
 -(void)initObject5{
-    int r = arc4random_uniform(320);
+    int r = arc4random_uniform(screenSize.width);
     int h = -(arc4random() %120);
     _object5.center = CGPointMake(r, h);
     [self coll];

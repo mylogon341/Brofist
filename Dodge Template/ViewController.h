@@ -25,10 +25,16 @@ BOOL go;
     IBOutlet UIButton *credits;
     UIButton * button;
     IBOutlet UIButton *highscoreButton;
+    IBOutlet UIImageView *bgImage;
+    IBOutlet UIImageView *groundImage;
+    
+    CGSize screenSize;
     
     int socialAlert;
     
     int startScore;
+    
+    bool isiPad;
     
 
 }
