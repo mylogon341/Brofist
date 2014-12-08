@@ -13,8 +13,10 @@
 #import "MylogonAudio.h"
 #import <Twitter/Twitter.h>
 #import <FacebookSDK/FacebookSDK.h>
-
+#import <SpriteKit/SpriteKit.h>
 BOOL go;
+
+
 
 @interface ViewController : UIViewController <GADBannerViewDelegate, SKProductsRequestDelegate,SKPaymentTransactionObserver, GameCenterManagerDelegate>{
     float speed;
@@ -26,8 +28,10 @@ BOOL go;
     UIButton * button;
     IBOutlet UIButton *highscoreButton;
     IBOutlet UIImageView *bgImage;
+    IBOutlet UIImageView *bgHills;
     IBOutlet UIImageView *groundImage;
     
+    IBOutlet SKView *snowView;
     
     
     CGSize screenSize;

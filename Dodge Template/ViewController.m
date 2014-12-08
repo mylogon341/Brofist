@@ -28,8 +28,6 @@
 #define adID @"ca-app-pub-4527607880928611/9436906689";
 
 
-
-
 @interface ViewController ()
 
 
@@ -53,9 +51,42 @@ int lol;
     
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    //snowView = (SKView *)self.view;
+//    snowView.showsFPS = YES;
+//    snowView.showsNodeCount = YES;
+    
+    // Create and configure the scene.
+    SKScene * scene = [SKScene sceneWithSize:snowView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+//    
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"spriteSnow"];
+    
+    background.position = CGPointMake(CGRectGetMidX(snowView.frame), CGRectGetMidY(snowView.frame));
+    background.name = @"BACKGROUND";
+    background.size = snowView.frame.size;
+    
+    [scene addChild:background];
+    
+    NSString *emitterPath = [[NSBundle mainBundle] pathForResource:@"SnowSystem" ofType:@"sks"];
+    SKEmitterNode *bokeh = [NSKeyedUnarchiver unarchiveObjectWithFile:emitterPath];
+    bokeh.position = CGPointMake(CGRectGetMidX(snowView.frame), snowView.frame.size.height);
+    bokeh.name = @"particleBokeh";
+    bokeh.targetNode = scene;
+    [scene addChild:bokeh];
+    
+   
+    
+ //   [self loadEmitterNode:@"SnowSystem"];
+    
+    // Present the scene.
+    [snowView presentScene:scene];
+
     
     NSString *deviceType = [UIDevice currentDevice].model;
 
@@ -69,7 +100,7 @@ int lol;
 
     _titleView.center = CGPointMake(screenSize.width/2, screenSize.height - 400);
     _gameoverView.center = CGPointMake(screenSize.width/2, screenSize.height + 400);
-
+    snowView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
     speed = 1;
     
@@ -124,7 +155,7 @@ int lol;
 
 -(void)fistScale:(UIImageView* )fist{
     
-    fist.frame = CGRectMake(0, -150, 90 * (screenSize.width/ 400), 90 * (screenSize.width/ 400));
+    fist.frame = CGRectMake(0, -150, 90 * (screenSize.width/ 450), 90 * (screenSize.width/ 450));
     
 }
 
@@ -140,6 +171,7 @@ int lol;
      CGRect menu;
     
     bgImage.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
+    bgHills.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     groundImage.frame = CGRectMake(0, 0, screenSize.width, 60);
     
     

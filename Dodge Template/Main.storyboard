@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,27 +13,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-i5" id="jKB-Pn-6Eb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i6+_bg" id="jKB-Pn-6Eb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object1" image="steelFIST" id="YOy-ZB-Mda">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i6+_bg_hills" id="hMi-UI-V9s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="OMN-0M-8sY" userLabel="snow" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.090197819210000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object1" image="steelFIST_xmas" id="YOy-ZB-Mda">
                                 <rect key="frame" x="-180" y="-80" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object2" image="brofist" id="ltZ-1C-u5q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object2" image="brofist_xmas" id="ltZ-1C-u5q">
                                 <rect key="frame" x="62" y="-30" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object3" image="brofist" id="jNc-5P-beZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object3" image="brofist_xmas" id="jNc-5P-beZ">
                                 <rect key="frame" x="118" y="-29" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object4" image="brofist" id="soy-AT-akn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object4" image="brofist_xmas" id="soy-AT-akn">
                                 <rect key="frame" x="182" y="-30" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object5" image="brofist" id="s9f-7V-yhg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="object5" image="brofist_xmas" id="s9f-7V-yhg">
                                 <rect key="frame" x="246" y="-30" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -122,8 +132,8 @@
                             <view contentMode="scaleToFill" id="a6t-iE-pt9">
                                 <rect key="frame" x="17" y="55" width="287" height="360"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" id="9dD-Hx-j4F">
-                                        <rect key="frame" x="31" y="20" width="225" height="80"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmasTitle.png" id="9dD-Hx-j4F">
+                                        <rect key="frame" x="31" y="13" width="225" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OEw-bp-eUD">
@@ -220,7 +230,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="bestScore" destination="hyd-f5-2Cg" id="12q-JR-JSb"/>
-                        <outlet property="bgImage" destination="jKB-Pn-6Eb" id="KjV-qa-mVh"/>
+                        <outlet property="bgHills" destination="hMi-UI-V9s" id="Rd0-za-0CD"/>
+                        <outlet property="bgImage" destination="jKB-Pn-6Eb" id="j20-5Q-AvN"/>
                         <outlet property="connecting" destination="Ldu-PR-Nhi" id="wNY-nZ-aEK"/>
                         <outlet property="finalScore" destination="xon-ah-Gdu" id="NOs-pt-jRV"/>
                         <outlet property="gameoverView" destination="9Sh-yk-URk" id="7Tx-Rs-Q5p"/>
@@ -233,6 +244,7 @@
                         <outlet property="object4" destination="soy-AT-akn" id="bH1-V6-Ga5"/>
                         <outlet property="object5" destination="s9f-7V-yhg" id="Zx2-V6-pPy"/>
                         <outlet property="scoreLabel" destination="eEG-Sh-phx" id="l2d-2H-lSb"/>
+                        <outlet property="snowView" destination="OMN-0M-8sY" id="AHB-8g-jic"/>
                         <outlet property="titleView" destination="a6t-iE-pt9" id="PKg-4G-iX9"/>
                     </connections>
                 </viewController>
@@ -248,7 +260,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-i5" id="D4G-xv-tm7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i6+_bg" id="D4G-xv-tm7">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                             </imageView>
@@ -330,14 +342,15 @@
     <resources>
         <image name="Chempo" width="125" height="125"/>
         <image name="back.png" width="80" height="50"/>
-        <image name="bg-i5" width="640" height="1136"/>
-        <image name="brofist" width="75" height="75"/>
+        <image name="brofist_xmas" width="150" height="150"/>
         <image name="connecting" width="300" height="300"/>
         <image name="credits" width="80" height="50"/>
         <image name="gameover" width="493" height="86"/>
         <image name="ground" width="640" height="201"/>
         <image name="hero" width="150" height="150"/>
         <image name="highscore" width="267" height="150"/>
+        <image name="i6+_bg" width="1080" height="1920"/>
+        <image name="i6+_bg_hills" width="1080" height="1920"/>
         <image name="noads" width="150" height="91"/>
         <image name="play" width="267" height="150"/>
         <image name="rate" width="150" height="91"/>
@@ -345,8 +358,8 @@
         <image name="retry" width="267" height="150"/>
         <image name="scoreboard" width="253" height="91"/>
         <image name="share" width="125" height="81"/>
-        <image name="steelFIST" width="75" height="75"/>
-        <image name="title" width="510" height="195"/>
+        <image name="steelFIST_xmas" width="150" height="150"/>
+        <image name="xmasTitle.png" width="510" height="220"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
