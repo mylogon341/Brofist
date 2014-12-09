@@ -58,13 +58,13 @@ int lol;
     
     
     //snowView = (SKView *)self.view;
-//    snowView.showsFPS = YES;
-//    snowView.showsNodeCount = YES;
+    //    snowView.showsFPS = YES;
+    //    snowView.showsNodeCount = YES;
     
     // Create and configure the scene.
     SKScene * scene = [SKScene sceneWithSize:snowView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-//    
+    //
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"spriteSnow"];
     
     background.position = CGPointMake(CGRectGetMidX(snowView.frame), CGRectGetMidY(snowView.frame));
@@ -80,16 +80,22 @@ int lol;
     bokeh.targetNode = scene;
     [scene addChild:bokeh];
     
-   
+    if(isiPad){
+        
+        _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
+        
+    }
     
- //   [self loadEmitterNode:@"SnowSystem"];
+    
+    
+    //   [self loadEmitterNode:@"SnowSystem"];
     
     // Present the scene.
     [snowView presentScene:scene];
-
+    
     
     NSString *deviceType = [UIDevice currentDevice].model;
-
+    
     if ([deviceType hasPrefix:@"iPad"]) {
         isiPad = YES;
     }else{
@@ -97,12 +103,16 @@ int lol;
     }
     
     screenSize = [[UIScreen mainScreen] bounds].size;
-
+    
     _titleView.center = CGPointMake(screenSize.width/2, screenSize.height - 400);
     _gameoverView.center = CGPointMake(screenSize.width/2, screenSize.height + 400);
     snowView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
-    speed = 1;
+    if (isiPad) {
+        speed = 1.5;
+    }else{
+        speed = 1;
+    }
     
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
@@ -168,22 +178,22 @@ int lol;
 -(void)menu{
     _scoreLabel.hidden = YES;
     _instructions.hidden = NO;
-     CGRect menu;
+    CGRect menu;
     
     bgImage.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     bgHills.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     groundImage.frame = CGRectMake(0, 0, screenSize.width, 60);
     
     
-   // [self resetHero];
-   
+    // [self resetHero];
+    
     go = NO;
-        
+    
     
     if (isiPad) {
-        menu = CGRectMake(screenSize.width/2 - 287/2, screenSize.height/2 - 180, 287, 360);
-    
-    
+        menu = CGRectMake(screenSize.width/2 - 287, screenSize.height/2 - 360, 574, 720);
+        _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
+        
     }else{
         
         
@@ -223,20 +233,20 @@ int lol;
         [gameTimer invalidate];
         gameTimer = nil;
     }
+    
     _object1.center = CGPointMake(0, -2000);
     [self performSelector:@selector(initObject1) withObject:nil afterDelay:1.5];
     [self initObject2];
     [self initObject3];
     [self initObject4];
     [self initObject5];
-   // [self resetHero];
     gameState = kGameStateRunning;
     
     CGRect menu;
     
     if (isiPad) {
         
-        menu = CGRectMake(screenSize.width/2 - 287/2, screenSize.height + 100, 287, 270);
+        menu = CGRectMake(screenSize.width/2 - 287, screenSize.height + 100, _titleView.frame.size.width, 270);
         
     }else{
         
@@ -271,9 +281,12 @@ int lol;
 - (IBAction)retry:(id)sender {
     CGRect done;
     go = NO;
-
+    reallyDead = false;
+    
     if (isiPad) {
-        done = CGRectMake(screenSize.width/2 - 140, screenSize.height + 400, 280, 286);
+        
+        done = CGRectMake(screenSize.width/2 - 287, screenSize.height + 100, _titleView.frame.size.width, 270);
+        
     }else{
         
         if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
@@ -291,7 +304,12 @@ int lol;
     [self coll];
     
     [button removeFromSuperview];
-    speed = 1;
+    
+    if (isiPad) {
+        speed = 1.5;
+    }else{
+        speed = 1;
+    }
     
     [UIView animateWithDuration: 0.6f
                           delay: 0.3f
@@ -314,8 +332,9 @@ int lol;
 #pragma mark - GAME
 -(void)gameLoop{
     
-    if (gameState == kGameStateOver) {
-        speed = 5;
+    if (gameState == kGameStateOver && !reallyDead) {
+        speed += 5;
+        reallyDead = true;
     }
     
     
@@ -441,21 +460,22 @@ int lol;
     
     if (isiPad) {
         
-        gameOver= CGRectMake(screenSize.width/2 - 140, screenSize.height/2 - 200, 280, 400);
+        gameOver = CGRectMake(screenSize.width/2 - 287, screenSize.height/2 - 360, 574, 720);
+        _gameoverView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
         
     }else{
-    
-    
-    if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-        if(screenSize.height >480.0f){
-            gameOver= CGRectMake(20,88,280,400);
+        
+        
+        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+            if(screenSize.height >480.0f){
+                gameOver= CGRectMake(20,88,280,400);
+                
+            }
+            else{
+                gameOver= CGRectMake(20,57,280,400);
+            }
             
         }
-        else{
-            gameOver= CGRectMake(20,57,280,400);
-        }
-        
-    }
     }
     
     [UIView animateWithDuration: 1.0f
@@ -556,124 +576,124 @@ int lol;
             
             
             // Check if the Facebook app is installed and we can present the share dialog
-           // FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-//            params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
+            // FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
+            //            params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
             
             // If the Facebook app is installed and we can present the share dialog
-//            if ([FBDialogs canPresentShareDialogWithParams:params]) {
-//                
-//                // Present share dialog
-//                [FBDialogs presentShareDialogWithLink:params.link
-//                                              handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-//                                                  if(error) {
-//                                                      // An error occurred, we need to handle the error
-//                                                      // See: https://developers.facebook.com/docs/ios/errors
-//                                                      NSLog(@"Error publishing story: %@", error.description);
-//                                                  } else {
-//                                                      // Success
-//                                                      NSLog(@"result %@", results);
-//                                                  }
-//                                              }];
-//                
-//                // If the Facebook app is NOT installed and we can't present the share dialog
-//            } else {
-                // FALLBACK: publish just a link using the Feed dialog
-                
-                // Put together the dialog parameters
-                NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                               @"BroFist", @"name",
-                                               @"How Many BroFists Can You Give?", @"caption",
-                                               @"Get BroFist today for FREE on iOS and compete against friends. Who will get the global High Score?!", @"description",
-                                               @"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8", @"link",
-                                               @"http://a5.mzstatic.com/us/r30/Purple4/v4/c4/77/28/c477287c-ba75-44e0-faca-4a65147b186a/mzl.zdzbmeob.175x175-75.jpg", @"picture",
-                                               nil];
-                
-                
-                [FBWebDialogs presentFeedDialogModallyWithSession:nil
-                                                       parameters:params
-                                                          handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
-                                                              if (error) {
-                                                                  // An error occurred, we need to handle the error
-                                                                  // See: https://developers.facebook.com/docs/ios/errors
-                                                                  NSLog(@"Error publishing story: %@", error.description);
+            //            if ([FBDialogs canPresentShareDialogWithParams:params]) {
+            //
+            //                // Present share dialog
+            //                [FBDialogs presentShareDialogWithLink:params.link
+            //                                              handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+            //                                                  if(error) {
+            //                                                      // An error occurred, we need to handle the error
+            //                                                      // See: https://developers.facebook.com/docs/ios/errors
+            //                                                      NSLog(@"Error publishing story: %@", error.description);
+            //                                                  } else {
+            //                                                      // Success
+            //                                                      NSLog(@"result %@", results);
+            //                                                  }
+            //                                              }];
+            //
+            //                // If the Facebook app is NOT installed and we can't present the share dialog
+            //            } else {
+            // FALLBACK: publish just a link using the Feed dialog
+            
+            // Put together the dialog parameters
+            NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                           @"BroFist", @"name",
+                                           @"How Many BroFists Can You Give?", @"caption",
+                                           @"Get BroFist today for FREE on iOS and compete against friends. Who will get the global High Score?!", @"description",
+                                           @"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8", @"link",
+                                           @"http://a5.mzstatic.com/us/r30/Purple4/v4/c4/77/28/c477287c-ba75-44e0-faca-4a65147b186a/mzl.zdzbmeob.175x175-75.jpg", @"picture",
+                                           nil];
+            
+            
+            [FBWebDialogs presentFeedDialogModallyWithSession:nil
+                                                   parameters:params
+                                                      handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
+                                                          if (error) {
+                                                              // An error occurred, we need to handle the error
+                                                              // See: https://developers.facebook.com/docs/ios/errors
+                                                              NSLog(@"Error publishing story: %@", error.description);
+                                                          } else {
+                                                              if (result == FBWebDialogResultDialogNotCompleted) {
+                                                                  // User canceled.
+                                                                  NSLog(@"User cancelled.");
                                                               } else {
-                                                                  if (result == FBWebDialogResultDialogNotCompleted) {
+                                                                  // Handle the publish feed callback
+                                                                  NSDictionary *urlParams = [self parseURLParams:[resultURL query]];
+                                                                  
+                                                                  if (![urlParams valueForKey:@"post_id"]) {
                                                                       // User canceled.
                                                                       NSLog(@"User cancelled.");
-                                                                  } else {
-                                                                      // Handle the publish feed callback
-                                                                      NSDictionary *urlParams = [self parseURLParams:[resultURL query]];
                                                                       
-                                                                      if (![urlParams valueForKey:@"post_id"]) {
-                                                                          // User canceled.
-                                                                          NSLog(@"User cancelled.");
-                                                                          
-                                                                      } else {
-                                                                          // User clicked the Share button
-                                                                          startScore = 50;
-                                                                          NSString *result = [NSString stringWithFormat: @"Posted story, id: %@", [urlParams valueForKey:@"post_id"]];
-                                                                          NSLog(@"result %@", result);
-                                                                      }
+                                                                  } else {
+                                                                      // User clicked the Share button
+                                                                      startScore = 50;
+                                                                      NSString *result = [NSString stringWithFormat: @"Posted story, id: %@", [urlParams valueForKey:@"post_id"]];
+                                                                      NSLog(@"result %@", result);
                                                                   }
                                                               }
-                                                          }];
-            }
+                                                          }
+                                                      }];
         }
-        
-        
-        
-        //twitter
-        if (buttonIndex == 2) {
-            {
-                //  Create an instance of the Tweet Sheet
-                SLComposeViewController *tweetSheet = [SLComposeViewController
-                                                       composeViewControllerForServiceType:
-                                                       SLServiceTypeTwitter];
-                
-                // Sets the completion handler.  Note that we don't know which thread the
-                // block will be called on, so we need to ensure that any required UI
-                // updates occur on the main queue
-                tweetSheet.completionHandler = ^(SLComposeViewControllerResult result) {
-                    switch(result) {
-                            //  This means the user cancelled without sending the Tweet
-                        case SLComposeViewControllerResultDone:
-                        {
-                            startScore = 50;
-                            
-                            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Success" message:@"You will now start with 50 points. Remember, you can do this as many times as you like!" delegate:self cancelButtonTitle:@"Cool!" otherButtonTitles: nil];
-                            [alert show];
-                            
-                            break;}
-                            //  This means the user hit 'Send'
-                        case SLComposeViewControllerResultCancelled:{
-                            
-                        }   break;
-                    }
-                };
-                
-                //  Set the initial body of the Tweet
-                [tweetSheet setInitialText:@"I am playing BroFist the Game on iOS for FREE! #Brofist"];
-                
-                //  Adds an image to the Tweet.  For demo purposes, assume we have an
-                //  image named 'larry.png' that we wish to attach
-                if (![tweetSheet addImage:[UIImage imageNamed:@"brofist"]]) {
-                    NSLog(@"Unable to add the image!");
-                }
-                
-                //  Add an URL to the Tweet.  You can add multiple URLs.
-                if (![tweetSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"]]){
-                    NSLog(@"Unable to add the URL!");
-                }
-                
-                //  Presents the Tweet Sheet to the user
-                [self presentViewController:tweetSheet animated:NO completion:^{
-                    NSLog(@"Tweet sheet has been presented.");
-                }];
-            }
-        }
-        
     }
     
+    
+    
+    //twitter
+    if (buttonIndex == 2) {
+        {
+            //  Create an instance of the Tweet Sheet
+            SLComposeViewController *tweetSheet = [SLComposeViewController
+                                                   composeViewControllerForServiceType:
+                                                   SLServiceTypeTwitter];
+            
+            // Sets the completion handler.  Note that we don't know which thread the
+            // block will be called on, so we need to ensure that any required UI
+            // updates occur on the main queue
+            tweetSheet.completionHandler = ^(SLComposeViewControllerResult result) {
+                switch(result) {
+                        //  This means the user cancelled without sending the Tweet
+                    case SLComposeViewControllerResultDone:
+                    {
+                        startScore = 50;
+                        
+                        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Success" message:@"You will now start with 50 points. Remember, you can do this as many times as you like!" delegate:self cancelButtonTitle:@"Cool!" otherButtonTitles: nil];
+                        [alert show];
+                        
+                        break;}
+                        //  This means the user hit 'Send'
+                    case SLComposeViewControllerResultCancelled:{
+                        
+                    }   break;
+                }
+            };
+            
+            //  Set the initial body of the Tweet
+            [tweetSheet setInitialText:@"I am playing BroFist the Game on iOS for FREE! #Brofist"];
+            
+            //  Adds an image to the Tweet.  For demo purposes, assume we have an
+            //  image named 'larry.png' that we wish to attach
+            if (![tweetSheet addImage:[UIImage imageNamed:@"brofist"]]) {
+                NSLog(@"Unable to add the image!");
+            }
+            
+            //  Add an URL to the Tweet.  You can add multiple URLs.
+            if (![tweetSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"]]){
+                NSLog(@"Unable to add the URL!");
+            }
+            
+            //  Presents the Tweet Sheet to the user
+            [self presentViewController:tweetSheet animated:NO completion:^{
+                NSLog(@"Tweet sheet has been presented.");
+            }];
+        }
+    }
+    
+}
+
 
 
 - (NSDictionary*)parseURLParams:(NSString *)query {

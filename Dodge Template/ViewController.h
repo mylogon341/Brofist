@@ -41,6 +41,7 @@ BOOL go;
     int startScore;
     
     bool isiPad;
+    bool reallyDead;
     
 
 }
