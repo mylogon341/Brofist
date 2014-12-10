@@ -56,6 +56,7 @@ int lol;
 {
     [super viewDidLoad];
     
+    screenSize = [[UIScreen mainScreen] bounds].size;
     
     //snowView = (SKView *)self.view;
     //    snowView.showsFPS = YES;
@@ -76,14 +77,13 @@ int lol;
     NSString *emitterPath = [[NSBundle mainBundle] pathForResource:@"SnowSystem" ofType:@"sks"];
     SKEmitterNode *bokeh = [NSKeyedUnarchiver unarchiveObjectWithFile:emitterPath];
     bokeh.position = CGPointMake(CGRectGetMidX(snowView.frame), snowView.frame.size.height);
+    bokeh.particlePositionRange = CGVectorMake(screenSize.width, 5);
     bokeh.name = @"particleBokeh";
     bokeh.targetNode = scene;
     [scene addChild:bokeh];
     
     if(isiPad){
-        
         _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
-        
     }
     
     
@@ -102,7 +102,6 @@ int lol;
         isiPad = NO;
     }
     
-    screenSize = [[UIScreen mainScreen] bounds].size;
     
     _titleView.center = CGPointMake(screenSize.width/2, screenSize.height - 400);
     _gameoverView.center = CGPointMake(screenSize.width/2, screenSize.height + 400);
@@ -336,7 +335,6 @@ int lol;
         speed += 5;
         reallyDead = true;
     }
-    
     
     _object1.center = CGPointMake(_object1.center.x, _object1.center.y + speed);
     _object2.center = CGPointMake(_object2.center.x, _object2.center.y + speed);
