@@ -18,7 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    if(isiPad)
+    {
+        creditsView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
+        creditsView.center = CGPointMake(screenSize.width/2, screenSize.height/2);
+        
+        groundImage.frame = CGRectMake(0, 0, screenSize.width, 60);
+        bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
+    }
+    
     
 }
 
@@ -26,7 +35,7 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
-  //      [self performSegueWithIdentifier:@"Menu" sender:nil];
+    //      [self performSegueWithIdentifier:@"Menu" sender:nil];
 }
 
 -(BOOL)prefersStatusBarHidden{

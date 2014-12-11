@@ -16,7 +16,8 @@
 #import <SpriteKit/SpriteKit.h>
 BOOL go;
 
-
+bool isiPad;
+CGSize screenSize;
 
 @interface ViewController : UIViewController <GADBannerViewDelegate, SKProductsRequestDelegate,SKPaymentTransactionObserver, GameCenterManagerDelegate>{
     float speed;
@@ -34,13 +35,11 @@ BOOL go;
     IBOutlet SKView *snowView;
     
     
-    CGSize screenSize;
     
     int socialAlert;
     
     int startScore;
     
-    bool isiPad;
     bool reallyDead;
     
 

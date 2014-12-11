@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController{
+    
+    
+    IBOutlet UIView *creditsView;
+    IBOutlet UIImageView *bgView;
+    IBOutlet UIImageView *groundImage;
+
+
+}
 
 @end
