@@ -198,10 +198,10 @@ int lol;
         
         if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
             if(screenSize.height >480.0f){
-                menu= CGRectMake(17,79,287,360);
+                menu= CGRectMake(screenSize.width/2 - 287/2,79,287,360);
             }
             else{
-                menu= CGRectMake(17,56,287,360);
+                menu= CGRectMake(screenSize.width/2 - 287/2,56,287,360);
             }
             
         }
