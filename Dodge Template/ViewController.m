@@ -6,7 +6,6 @@
 //
 
 #import "ViewController.h"
-#import "GADRequest.h"
 #import "AppDelegate.h"
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -48,9 +47,7 @@ int lol;
 }
 -(void)viewDidLayoutSubviews{
     
-    
 }
-
 
 - (void)viewDidLoad
 {
@@ -58,40 +55,90 @@ int lol;
     
     screenSize = [[UIScreen mainScreen] bounds].size;
     
+    PFQuery *query = [PFQuery queryWithClassName:@"Assets"];
+    
+    [query fromLocalDatastore];
+    
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *fetchObject,NSError*err){
+        
+        [fetchObject fetchFromLocalDatastoreInBackgroundWithBlock:^(PFObject *object, NSError *error){
+            
+            if (!error) {
+                NSLog(@"%@",object);
+                
+                PFFile * normalFist = object[@"standardFist"];
+                [normalFist getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
+                    normalFistImage = [UIImage imageWithData:result];
+                    
+                    [_object5 setImage:normalFistImage];
+                    [_object2 setImage:normalFistImage];
+                    [_object3 setImage:normalFistImage];
+                    [_object4 setImage:normalFistImage];
+                }];
+                
+                PFFile *background = object[@"background"];
+                [background getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
+                    [bgHills setImage:[UIImage imageWithData:result]];
+                }];
+                
+                PFFile *titleImage = object[@"header"];
+                [titleImage getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
+                    [_brofistTitle setImage:[UIImage imageWithData:result]];
+                }];
+                
+                PFFile * steelFist = object[@"steelFist"];
+                [steelFist getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
+                    [_object1 setImage:[UIImage imageWithData:result]];
+                }];
+                
+                PFFile * musicFile = object[@"music"];
+                [musicFile getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
+                    [[MylogonAudio sharedInstance]playDataBackgroundMusic:result];
+                }];
+            }
+        }];
+    }];
+    
+     
+
+    
+    
+//    [[MylogonAudio sharedInstance]playBackgroundMusic:<#(NSString *)#>]
+    
     //snowView = (SKView *)self.view;
     //    snowView.showsFPS = YES;
     //    snowView.showsNodeCount = YES;
     
-    // Create and configure the scene.
-    SKScene * scene = [SKScene sceneWithSize:snowView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    //
-    SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"spriteSnow"];
-    
-    background.position = CGPointMake(CGRectGetMidX(snowView.frame), CGRectGetMidY(snowView.frame));
-    background.name = @"BACKGROUND";
-    background.size = snowView.frame.size;
-    
-    [scene addChild:background];
-    
-    NSString *emitterPath = [[NSBundle mainBundle] pathForResource:@"SnowSystem" ofType:@"sks"];
-    SKEmitterNode *bokeh = [NSKeyedUnarchiver unarchiveObjectWithFile:emitterPath];
-    bokeh.position = CGPointMake(CGRectGetMidX(snowView.frame), snowView.frame.size.height);
-    bokeh.particlePositionRange = CGVectorMake(screenSize.width, 5);
-    bokeh.name = @"particleBokeh";
-    bokeh.targetNode = scene;
-    [scene addChild:bokeh];
-    
-    if(isiPad){
-        _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
-    }
-    
-    
-    
-    //   [self loadEmitterNode:@"SnowSystem"];
-    
-    // Present the scene.
-    [snowView presentScene:scene];
+//    // Create and configure the scene.
+//    SKScene * scene = [SKScene sceneWithSize:snowView.bounds.size];
+//    scene.scaleMode = SKSceneScaleModeAspectFill;
+//    //
+//    SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"spriteSnow"];
+//    
+//    background.position = CGPointMake(CGRectGetMidX(snowView.frame), CGRectGetMidY(snowView.frame));
+//    background.name = @"BACKGROUND";
+//    background.size = snowView.frame.size;
+//    
+//    [scene addChild:background];
+//    
+//    NSString *emitterPath = [[NSBundle mainBundle] pathForResource:@"SnowSystem" ofType:@"sks"];
+//    SKEmitterNode *bokeh = [NSKeyedUnarchiver unarchiveObjectWithFile:emitterPath];
+//    bokeh.position = CGPointMake(CGRectGetMidX(snowView.frame), snowView.frame.size.height);
+//    bokeh.particlePositionRange = CGVectorMake(screenSize.width, 5);
+//    bokeh.name = @"particleBokeh";
+//    bokeh.targetNode = scene;
+//    [scene addChild:bokeh];
+//    
+//    if(isiPad){
+//        _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
+//    }
+//    
+//    
+//    
+//    //   [self loadEmitterNode:@"SnowSystem"];
+//    
+//    // Present the scene.
+//    [snowView presentScene:scene];
     
     
     NSString *deviceType = [UIDevice currentDevice].model;
@@ -103,7 +150,7 @@ int lol;
     }
     
     
-    _titleView.center = CGPointMake(screenSize.width/2, screenSize.height - 400);
+    _titleView.center = CGPointMake(screenSize.width/2, screenSize.height + 400);
     _gameoverView.center = CGPointMake(screenSize.width/2, screenSize.height + 400);
     snowView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     
@@ -113,23 +160,12 @@ int lol;
         speed = 1;
     }
     
-    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    self.bannerView.adUnitID = adID;
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
     
-    [bannerView_ setDelegate:self];
+    [self.bannerView setCenter:CGPointMake(self.view.frame.size.width/2, 25)];
     
-    startScore = 0;
-    
-    // Specify the ad unit ID.
-    bannerView_.adUnitID = adID;
-    
-    // Let the runtime know which UIViewController to restore after taking
-    // the user wherever the ad goes and add it to the view hierarchy.
-    bannerView_.rootViewController = self;
-    [self.view addSubview:bannerView_];
-    
-    [bannerView_ loadRequest:[GADRequest request]];
-    
-    bannerView_.center = CGPointMake(screenSize.width/2, bannerView_.frame.size.height/2);
     
     // Initiate a generic request to load it with an ad.
     
@@ -158,6 +194,15 @@ int lol;
     _bestScore.font = [UIFont fontWithName:@"debussy" size:20];
     _bestScore.textColor = [UIColor blackColor];
     
+    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+        content.contentTitle = @"BroFist";
+        content.contentURL = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
+        content.contentDescription = @"Get BroFist today for FREE on iOS and compete against friends. Who will get the global High Score?!";
+    
+    FBSDKShareButton *shareButtonbutton = [[FBSDKShareButton alloc] init];
+    shareButtonbutton.shareContent = content;
+    [self.titleView addSubview:shareButtonbutton];
+    [shareButtonbutton setCenter:CGPointMake(credits.center.x + 50, credits.center.y)];
     
     [self menu];
 }
@@ -165,7 +210,6 @@ int lol;
 -(void)fistScale:(UIImageView* )fist{
     
     fist.frame = CGRectMake(0, -150, 90 * (screenSize.width/ 450), 90 * (screenSize.width/ 450));
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -177,7 +221,7 @@ int lol;
 -(void)menu{
     _scoreLabel.hidden = YES;
     _instructions.hidden = NO;
-    CGRect menu;
+    //CGRect menu;
     
     bgImage.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     bgHills.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
@@ -189,26 +233,26 @@ int lol;
     go = NO;
     
     
-    if (isiPad) {
-        menu = CGRectMake(screenSize.width/2 - 287, screenSize.height/2 - 360, 574, 720);
-        _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
-        
-    }else{
-        
-        
-        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-            if(screenSize.height >480.0f){
-                menu= CGRectMake(screenSize.width/2 - 287/2,79,287,360);
-            }
-            else{
-                menu= CGRectMake(screenSize.width/2 - 287/2,56,287,360);
-            }
-            
-        }
-    }
+//    if (isiPad) {
+//        menu = CGRectMake(screenSize.width/2 - 287, screenSize.height/2 - 360, 574, 720);
+//        _titleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
+//        
+//    }else{
+//        
+//        
+//        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+//            if(screenSize.height >480.0f){
+//                menu= CGRectMake(screenSize.width/2 - 287/2,79,287,360);
+//            }
+//            else{
+//                menu= CGRectMake(screenSize.width/2 - 287/2,56,287,360);
+//            }
+//            
+//        }
+//    }
     [UIView animateWithDuration: 0.5f
                      animations:^{
-                         _titleView.frame = menu;
+                         _titleView.center = self.view.center;
                      }
                      completion:^(BOOL finished){
                          
@@ -241,28 +285,30 @@ int lol;
     [self initObject5];
     gameState = kGameStateRunning;
     
-    CGRect menu;
-    
-    if (isiPad) {
-        
-        menu = CGRectMake(screenSize.width/2 - 287, screenSize.height + 100, _titleView.frame.size.width, 270);
-        
-    }else{
-        
-        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-            if(screenSize.height >480.0f){
-                menu= CGRectMake(17,700,287,270);
-            }
-            else{
-                menu= CGRectMake(17,600,287,270);
-            }
-            
-        }
-        
-    }
-    [UIView animateWithDuration: 1.0f
+//    CGRect menu;
+//    
+//    if (isiPad) {
+//        
+//        menu = CGRectMake(screenSize.width/2 - 287, screenSize.height + 100, _titleView.frame.size.width, 270);
+//        
+//    }else{
+//
+//        menu
+//        
+////        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+////            if(screenSize.height >480.0f){
+////                menu= CGRectMake(17,700,287,270);
+////            }
+////            else{
+////                menu= CGRectMake(17,600,287,270);
+////            }
+////            
+////        }
+//        
+//    }
+    [UIView animateWithDuration:0.5
                      animations:^{
-                         _titleView.frame = menu;
+                         _titleView.center = CGPointMake(self.view.frame.size.width /2, self.view.frame.size.height + _titleView.frame.size.height);
                      }
                      completion:^(BOOL finished){
                          gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(gameLoop) userInfo:nil repeats:YES];
@@ -278,27 +324,27 @@ int lol;
 }
 
 - (IBAction)retry:(id)sender {
-    CGRect done;
+//    CGRect done;
     go = NO;
     reallyDead = false;
     
-    if (isiPad) {
-        
-        done = CGRectMake(screenSize.width/2 - 287, screenSize.height + 100, _titleView.frame.size.width, 270);
-        
-    }else{
-        
-        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-            if(screenSize.height >480.0f){
-                done = CGRectMake(16,700,280,286);
-            }
-            else{
-                done = CGRectMake(16,600,280,286);
-            }
-            
-        }
-    }
-    
+//    if (isiPad) {
+//        
+//        done = CGRectMake(screenSize.width/2 - 287, screenSize.height + 100, _titleView.frame.size.width, 270);
+//        
+//    }else{
+//        
+//        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
+//            if(screenSize.height >480.0f){
+//                done = CGRectMake(16,700,280,286);
+//            }
+//            else{
+//                done = CGRectMake(16,600,280,286);
+//            }
+//            
+//        }
+//    }
+//    
     [_object1 setCenter:CGPointMake(arc4random_uniform(320), -220)];
     [self coll];
     
@@ -314,7 +360,7 @@ int lol;
                           delay: 0.3f
                         options: UIViewAnimationOptionCurveEaseIn
                      animations:^{
-                         _gameoverView.frame = done;
+                         _gameoverView.center = CGPointMake(self.view.center.x, self.view.frame.size.height+400);
                      }
                      completion:^(BOOL finished){
                          [self play:self];
@@ -454,31 +500,10 @@ int lol;
     
     _bestScore.text = [defaults objectForKey:@"highscore"];
     
-    CGRect gameOver;
-    
-    if (isiPad) {
-        
-        gameOver = CGRectMake(screenSize.width/2 - 287, screenSize.height/2 - 360, 574, 720);
-        _gameoverView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
-        
-    }else{
-        
-        
-        if(UI_USER_INTERFACE_IDIOM() == UI_USER_INTERFACE_IDIOM()){
-            if(screenSize.height >480.0f){
-                gameOver= CGRectMake(20,88,280,400);
-                
-            }
-            else{
-                gameOver= CGRectMake(20,57,280,400);
-            }
-            
-        }
-    }
     
     [UIView animateWithDuration: 1.0f
                      animations:^{
-                         _gameoverView.frame = gameOver;
+                         [_gameoverView setCenter:self.view.center];
                      }
                      completion:^(BOOL finished){
                          
@@ -572,70 +597,15 @@ int lol;
         //facebook
         if (buttonIndex == 1) {
             
+           
+#warning facebook sharing
+//            FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] init];
+//            dialog.fromViewController = self;
+//            dialog.mode = FBSDKShareDialogModeWeb;
+//            
+//            [dialog show];
             
-            // Check if the Facebook app is installed and we can present the share dialog
-            // FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-            //            params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8"];
-            
-            // If the Facebook app is installed and we can present the share dialog
-            //            if ([FBDialogs canPresentShareDialogWithParams:params]) {
-            //
-            //                // Present share dialog
-            //                [FBDialogs presentShareDialogWithLink:params.link
-            //                                              handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-            //                                                  if(error) {
-            //                                                      // An error occurred, we need to handle the error
-            //                                                      // See: https://developers.facebook.com/docs/ios/errors
-            //                                                      NSLog(@"Error publishing story: %@", error.description);
-            //                                                  } else {
-            //                                                      // Success
-            //                                                      NSLog(@"result %@", results);
-            //                                                  }
-            //                                              }];
-            //
-            //                // If the Facebook app is NOT installed and we can't present the share dialog
-            //            } else {
-            // FALLBACK: publish just a link using the Feed dialog
-            
-            // Put together the dialog parameters
-            NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                           @"BroFist", @"name",
-                                           @"How Many BroFists Can You Give?", @"caption",
-                                           @"Get BroFist today for FREE on iOS and compete against friends. Who will get the global High Score?!", @"description",
-                                           @"https://itunes.apple.com/us/app/brofist-game-how-many-brofists/id894589832?mt=8", @"link",
-                                           @"http://a5.mzstatic.com/us/r30/Purple4/v4/c4/77/28/c477287c-ba75-44e0-faca-4a65147b186a/mzl.zdzbmeob.175x175-75.jpg", @"picture",
-                                           nil];
-            
-            
-            [FBWebDialogs presentFeedDialogModallyWithSession:nil
-                                                   parameters:params
-                                                      handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
-                                                          if (error) {
-                                                              // An error occurred, we need to handle the error
-                                                              // See: https://developers.facebook.com/docs/ios/errors
-                                                              NSLog(@"Error publishing story: %@", error.description);
-                                                          } else {
-                                                              if (result == FBWebDialogResultDialogNotCompleted) {
-                                                                  // User canceled.
-                                                                  NSLog(@"User cancelled.");
-                                                              } else {
-                                                                  // Handle the publish feed callback
-                                                                  NSDictionary *urlParams = [self parseURLParams:[resultURL query]];
-                                                                  
-                                                                  if (![urlParams valueForKey:@"post_id"]) {
-                                                                      // User canceled.
-                                                                      NSLog(@"User cancelled.");
-                                                                      
-                                                                  } else {
-                                                                      // User clicked the Share button
-                                                                      startScore = 50;
-                                                                      NSString *result = [NSString stringWithFormat: @"Posted story, id: %@", [urlParams valueForKey:@"post_id"]];
-                                                                      NSLog(@"result %@", result);
-                                                                  }
-                                                              }
-                                                          }
-                                                      }];
-        }
+                    }
     }
     
     
@@ -691,7 +661,6 @@ int lol;
     }
     
 }
-
 
 
 - (NSDictionary*)parseURLParams:(NSString *)query {
@@ -765,16 +734,16 @@ int lol;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey: @"noads"] != nil &&
         [[defaults objectForKey: @"noads"] isEqualToString: @"YES"]) {
-        bannerView_.hidden = YES;
+        self.bannerView.hidden = YES;
         
     }
     else {
-        bannerView_.hidden = NO;
+        self.bannerView.hidden = NO;
     }
 }
 
 - (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError: (GADRequestError *)error {
-    bannerView_.hidden = YES;
+    self.bannerView.hidden = YES;
 }
 
 
@@ -881,7 +850,8 @@ int lol;
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions{
     for(SKPaymentTransaction *transaction in transactions){
         switch (transaction.transactionState){
-                
+                case SKPaymentTransactionStateDeferred:
+                break;
             case SKPaymentTransactionStatePurchasing:{
                 NSLog(@"Transaction state -> Purchasing");
                 //called when the user is in the process of purchasing, do not add any of your own code here.
@@ -916,7 +886,7 @@ int lol;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"YES"forKey:@"noads"];
     [defaults synchronize];
-    bannerView_.hidden = YES;
+    self.bannerView.hidden = YES;
 }
 
 #pragma mark - GAME CENTER

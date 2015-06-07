@@ -25,6 +25,15 @@
   [self.backgroundMusicPlayer play];
 }
 
+- (void)playDataBackgroundMusic:(NSData *)pffile {
+    
+    NSError *error;
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithData:pffile error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+}
+
 - (void)pauseBackgroundMusic {
   [self.backgroundMusicPlayer pause];
 }

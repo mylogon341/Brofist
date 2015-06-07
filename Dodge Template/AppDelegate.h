@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "GameCenterManager.h"
 #import "ViewController.h"
+#import <Parse/Parse.h>
 
 int socialTen;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

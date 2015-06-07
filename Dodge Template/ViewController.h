@@ -6,23 +6,23 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GADBannerView.h"
-#import "GADBannerViewDelegate.h"
 #import <StoreKit/StoreKit.h>
 #import "GameCenterManager.h"
 #import "MylogonAudio.h"
 #import <Twitter/Twitter.h>
-#import <FacebookSDK/FacebookSDK.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import <Parse/Parse.h>
+
 BOOL go;
 
 bool isiPad;
 CGSize screenSize;
 
-@interface ViewController : UIViewController <GADBannerViewDelegate, SKProductsRequestDelegate,SKPaymentTransactionObserver, GameCenterManagerDelegate>{
-    float speed;
+@import GoogleMobileAds;
 
-    GADBannerView *bannerView_;
+@interface ViewController : UIViewController < SKProductsRequestDelegate,SKPaymentTransactionObserver, GameCenterManagerDelegate>{
+    float speed;
 
     NSArray * objectsArray;
     IBOutlet UIButton *credits;
@@ -34,7 +34,9 @@ CGSize screenSize;
     
     IBOutlet SKView *snowView;
     
-    
+    UIImage * normalFistImage;
+    UIImage * steelFistImage;
+    UIImage * backgroundImage;
     
     int socialAlert;
     
@@ -59,6 +61,12 @@ CGSize screenSize;
 @property (weak, nonatomic) IBOutlet UIView *titleView;
 @property (weak, nonatomic) IBOutlet UIImageView *instructions;
 @property (weak, nonatomic) IBOutlet UIImageView *connecting;
+@property (strong, nonatomic) IBOutlet UIImageView *background;
+
+@property (strong, nonatomic) IBOutlet UIImageView * brofistTitle;
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
 
 - (IBAction)rate:(id)sender;
 - (IBAction)retry:(id)sender;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180ED3B2195E3ACA005BB26A /* bgSTANDARD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180ED3AD195E3ACA005BB26A /* bgSTANDARD.mp3 */; };
 		181C42A71961AEC1006E8FBE /* Chempo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181C42A61961AEC1006E8FBE /* Chempo@2x.png */; };
 		1864A41A1990FE5800E55F0C /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1864A4191990FE5800E55F0C /* share@2x.png */; };
 		1869EBD9198BEB1D0065D0EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869EBD8198BEB1D0065D0EC /* Security.framework */; };
@@ -57,16 +56,25 @@
 		18FAB6AD1960DDDF00A984CF /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FAB6AB1960DDDF00A984CF /* back@2x.png */; };
 		18FAB6AE1960DDDF00A984CF /* credits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FAB6AC1960DDDF00A984CF /* credits@2x.png */; };
 		3C055FD41960CEEB00D4836E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C055FD31960CEEB00D4836E /* GameViewController.m */; };
-		3C5503501A3512B80062E30C /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C55034F1A3512B80062E30C /* bg.mp3 */; };
 		3C5503571A3515EB0062E30C /* SnowSystem.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3C5503551A3515EB0062E30C /* SnowSystem.sks */; };
 		3C5503581A3515EB0062E30C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C5503561A3515EB0062E30C /* spark.png */; };
 		3C55035D1A3517490062E30C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C55035C1A3517490062E30C /* SpriteKit.framework */; };
 		3C55035F1A351D550062E30C /* xmasTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C55035E1A351D550062E30C /* xmasTitle.png */; };
 		3C65BA7C19815EE900B7C300 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C65BA7B19815EE900B7C300 /* Twitter.framework */; };
-		3C65BA7E19816A9600B7C300 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C65BA7D19816A9600B7C300 /* FacebookSDK.framework */; };
 		3C83E95D1981591A00BBD3F2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C83E95C1981591A00BBD3F2 /* Social.framework */; };
 		3C937346195DD96900D22E55 /* MylogonAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C937345195DD96900D22E55 /* MylogonAudio.m */; };
-		3C99C5401A34B83D00823898 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C99C53F1A34B83D00823898 /* libGoogleAdMobAds.a */; };
+		3C9FCA6B1B109D850064652D /* summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9FCA6A1B109D850064652D /* summer.png */; };
+		3CF6269E1B1D2BA100ED0249 /* libPods-Dodge Template-FBSDKShareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6269D1B1D2BA100ED0249 /* libPods-Dodge Template-FBSDKShareKit.a */; };
+		3CF626A21B1D38D900ED0249 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626A11B1D38D900ED0249 /* CFNetwork.framework */; };
+		3CF626A41B1D38EA00ED0249 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626A31B1D38EA00ED0249 /* CoreLocation.framework */; };
+		3CF626A61B1D38F900ED0249 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626A51B1D38F900ED0249 /* MobileCoreServices.framework */; };
+		3CF626A81B1D390700ED0249 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626A71B1D390700ED0249 /* QuartzCore.framework */; };
+		3CF626AA1B1D392A00ED0249 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626A91B1D392A00ED0249 /* libz.dylib */; };
+		3CF626AC1B1D393500ED0249 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626AB1B1D393500ED0249 /* libsqlite3.dylib */; };
+		3CF626AE1B1D394000ED0249 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626AD1B1D394000ED0249 /* Accounts.framework */; };
+		3CF626B11B1D3BD800ED0249 /* ServerCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF626B01B1D3BD800ED0249 /* ServerCheckViewController.m */; };
+		3CF626B31B1D3D4100ED0249 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF626B21B1D3D4100ED0249 /* Parse.framework */; };
+		900D4119E8AA45DEF9EF430C /* libPods-Dodge Template.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BFD356FB609F1BA3528897 /* libPods-Dodge Template.a */; };
 		AC625243192BEAE000034F59 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC62523C192BEAE000034F59 /* GameCenterManager.m */; };
 		AC625244192BEAE000034F59 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = AC62523E192BEAE000034F59 /* NSDataAES256.m */; };
 		AC625245192BEAE000034F59 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC625240192BEAE000034F59 /* Reachability.m */; };
@@ -108,7 +116,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180ED3AD195E3ACA005BB26A /* bgSTANDARD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgSTANDARD.mp3; sourceTree = "<group>"; };
 		181C42A61961AEC1006E8FBE /* Chempo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chempo@2x.png"; sourceTree = "<group>"; };
 		1864A4191990FE5800E55F0C /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@2x.png"; sourceTree = "<group>"; };
 		1869EBD8198BEB1D0065D0EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -157,31 +164,32 @@
 		189779761A3A636600E2AA24 /* iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad@2x.png"; sourceTree = "<group>"; };
 		18FAB6AB1960DDDF00A984CF /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		18FAB6AC1960DDDF00A984CF /* credits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credits@2x.png"; sourceTree = "<group>"; };
+		1ADA1EC486CF95834605341A /* Pods-Dodge Template.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dodge Template.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Dodge Template/Pods-Dodge Template.distribution.xcconfig"; sourceTree = "<group>"; };
+		39BFD356FB609F1BA3528897 /* libPods-Dodge Template.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dodge Template.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C055FD21960CEEB00D4836E /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		3C055FD31960CEEB00D4836E /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		3C55034F1A3512B80062E30C /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
 		3C5503551A3515EB0062E30C /* SnowSystem.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = SnowSystem.sks; path = ../SnowSystem.sks; sourceTree = "<group>"; };
 		3C5503561A3515EB0062E30C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = ../spark.png; sourceTree = "<group>"; };
 		3C55035C1A3517490062E30C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		3C55035E1A351D550062E30C /* xmasTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmasTitle.png; sourceTree = "<group>"; };
 		3C65BA7B19815EE900B7C300 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		3C65BA7D19816A9600B7C300 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		3C83E95C1981591A00BBD3F2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3C937344195DD96900D22E55 /* MylogonAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MylogonAudio.h; sourceTree = "<group>"; };
 		3C937345195DD96900D22E55 /* MylogonAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MylogonAudio.m; sourceTree = "<group>"; };
-		3C99C5331A34B83D00823898 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
-		3C99C5341A34B83D00823898 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
-		3C99C5351A34B83D00823898 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
-		3C99C5361A34B83D00823898 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
-		3C99C5371A34B83D00823898 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
-		3C99C5381A34B83D00823898 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
-		3C99C5391A34B83D00823898 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
-		3C99C53A1A34B83D00823898 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
-		3C99C53B1A34B83D00823898 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
-		3C99C53C1A34B83D00823898 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
-		3C99C53D1A34B83D00823898 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
-		3C99C53E1A34B83D00823898 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
-		3C99C53F1A34B83D00823898 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		3C9FCA6A1B109D850064652D /* summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summer.png; sourceTree = "<group>"; };
+		3CF6269D1B1D2BA100ED0249 /* libPods-Dodge Template-FBSDKShareKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Dodge Template-FBSDKShareKit.a"; path = "Pods/../build/Debug-iphoneos/libPods-Dodge Template-FBSDKShareKit.a"; sourceTree = "<group>"; };
+		3CF626A11B1D38D900ED0249 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3CF626A31B1D38EA00ED0249 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3CF626A51B1D38F900ED0249 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3CF626A71B1D390700ED0249 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3CF626A91B1D392A00ED0249 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3CF626AB1B1D393500ED0249 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CF626AD1B1D394000ED0249 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3CF626AF1B1D3BD800ED0249 /* ServerCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCheckViewController.h; sourceTree = "<group>"; };
+		3CF626B01B1D3BD800ED0249 /* ServerCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCheckViewController.m; sourceTree = "<group>"; };
+		3CF626B21B1D3D4100ED0249 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.7.4/Parse.framework"; sourceTree = "<group>"; };
+		6D468EC2F9CED33E8D0A8F6B /* Pods-Dodge Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dodge Template.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dodge Template/Pods-Dodge Template.debug.xcconfig"; sourceTree = "<group>"; };
+		A7FE6EACC6A8427997C9085F /* Pods-Dodge Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dodge Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dodge Template/Pods-Dodge Template.release.xcconfig"; sourceTree = "<group>"; };
 		AC62523B192BEAE000034F59 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		AC62523C192BEAE000034F59 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		AC62523D192BEAE000034F59 /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
@@ -226,23 +234,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C55035D1A3517490062E30C /* SpriteKit.framework in Frameworks */,
+				3CF626B31B1D3D4100ED0249 /* Parse.framework in Frameworks */,
+				3CF626AE1B1D394000ED0249 /* Accounts.framework in Frameworks */,
+				3CF626AC1B1D393500ED0249 /* libsqlite3.dylib in Frameworks */,
+				3CF626AA1B1D392A00ED0249 /* libz.dylib in Frameworks */,
+				3CF6269E1B1D2BA100ED0249 /* libPods-Dodge Template-FBSDKShareKit.a in Frameworks */,
+				AC62524C192BEB5800034F59 /* AudioToolbox.framework in Frameworks */,
+				3CF626A21B1D38D900ED0249 /* CFNetwork.framework in Frameworks */,
+				ACF24A41192BE96100DCAC59 /* CoreGraphics.framework in Frameworks */,
+				3CF626A41B1D38EA00ED0249 /* CoreLocation.framework in Frameworks */,
+				3CF626A61B1D38F900ED0249 /* MobileCoreServices.framework in Frameworks */,
+				3CF626A81B1D390700ED0249 /* QuartzCore.framework in Frameworks */,
 				1869EBD9198BEB1D0065D0EC /* Security.framework in Frameworks */,
-				3C99C5401A34B83D00823898 /* libGoogleAdMobAds.a in Frameworks */,
+				F5C33CD219490299008426D2 /* SystemConfiguration.framework in Frameworks */,
+				3C55035D1A3517490062E30C /* SpriteKit.framework in Frameworks */,
 				3C65BA7C19815EE900B7C300 /* Twitter.framework in Frameworks */,
 				3C83E95D1981591A00BBD3F2 /* Social.framework in Frameworks */,
 				F5C33CCA1949024D008426D2 /* AdSupport.framework in Frameworks */,
-				AC62524C192BEB5800034F59 /* AudioToolbox.framework in Frameworks */,
 				F5C33CCC19490269008426D2 /* AVFoundation.framework in Frameworks */,
-				ACF24A41192BE96100DCAC59 /* CoreGraphics.framework in Frameworks */,
 				F5C33CCE1949027F008426D2 /* CoreTelephony.framework in Frameworks */,
 				F5C33CD01949028A008426D2 /* MessageUI.framework in Frameworks */,
 				AC62524E192BEB6500034F59 /* StoreKit.framework in Frameworks */,
-				F5C33CD219490299008426D2 /* SystemConfiguration.framework in Frameworks */,
-				3C65BA7E19816A9600B7C300 /* FacebookSDK.framework in Frameworks */,
 				AC62524A192BEB3200034F59 /* GameKit.framework in Frameworks */,
 				ACF24A43192BE96100DCAC59 /* UIKit.framework in Frameworks */,
 				ACF24A3F192BE96100DCAC59 /* Foundation.framework in Frameworks */,
+				900D4119E8AA45DEF9EF430C /* libPods-Dodge Template.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,11 +362,11 @@
 		AC625248192BEB0700034F59 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3C9FCA6A1B109D850064652D /* summer.png */,
 				1897795D1A3A636600E2AA24 /* xmas_assets */,
 				3C55035E1A351D550062E30C /* xmasTitle.png */,
 				3C5503551A3515EB0062E30C /* SnowSystem.sks */,
 				3C5503561A3515EB0062E30C /* spark.png */,
-				3C55034F1A3512B80062E30C /* bg.mp3 */,
 				189350D7195EED8C001903AF /* i4-4s.png */,
 				181C42A61961AEC1006E8FBE /* Chempo@2x.png */,
 				1864A4191990FE5800E55F0C /* share@2x.png */,
@@ -358,7 +374,6 @@
 				18FAB6AB1960DDDF00A984CF /* back@2x.png */,
 				18FAB6AC1960DDDF00A984CF /* credits@2x.png */,
 				189350B4195EE997001903AF /* Icon */,
-				180ED3AD195E3ACA005BB26A /* bgSTANDARD.mp3 */,
 				ACF24A85192BE9D000DCAC59 /* 8-BIT WONDER.TTF */,
 				189350B2195EE1F2001903AF /* debussy.TTF */,
 				ACF24A86192BE9D000DCAC59 /* deadSound.mp3 */,
@@ -375,6 +390,7 @@
 				ACF24A63192BE96100DCAC59 /* Dodge TemplateTests */,
 				ACF24A3D192BE96100DCAC59 /* Frameworks */,
 				ACF24A3C192BE96100DCAC59 /* Products */,
+				FBD36DDF0809F609C7EFCAD7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -390,9 +406,17 @@
 		ACF24A3D192BE96100DCAC59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CF626B21B1D3D4100ED0249 /* Parse.framework */,
+				3CF626AD1B1D394000ED0249 /* Accounts.framework */,
+				3CF626AB1B1D393500ED0249 /* libsqlite3.dylib */,
+				3CF626A91B1D392A00ED0249 /* libz.dylib */,
+				3CF626A71B1D390700ED0249 /* QuartzCore.framework */,
+				3CF626A51B1D38F900ED0249 /* MobileCoreServices.framework */,
+				3CF626A31B1D38EA00ED0249 /* CoreLocation.framework */,
+				3CF626A11B1D38D900ED0249 /* CFNetwork.framework */,
+				3CF6269D1B1D2BA100ED0249 /* libPods-Dodge Template-FBSDKShareKit.a */,
 				3C55035C1A3517490062E30C /* SpriteKit.framework */,
 				1869EBD8198BEB1D0065D0EC /* Security.framework */,
-				3C65BA7D19816A9600B7C300 /* FacebookSDK.framework */,
 				3C65BA7B19815EE900B7C300 /* Twitter.framework */,
 				3C83E95C1981591A00BBD3F2 /* Social.framework */,
 				F5C33CD119490299008426D2 /* SystemConfiguration.framework */,
@@ -408,6 +432,7 @@
 				ACF24A40192BE96100DCAC59 /* CoreGraphics.framework */,
 				ACF24A42192BE96100DCAC59 /* UIKit.framework */,
 				ACF24A5D192BE96100DCAC59 /* XCTest.framework */,
+				39BFD356FB609F1BA3528897 /* libPods-Dodge Template.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -418,12 +443,13 @@
 				3C055FD21960CEEB00D4836E /* GameViewController.h */,
 				3C055FD31960CEEB00D4836E /* GameViewController.m */,
 				AC625247192BEAF300034F59 /* Game Center Manager */,
-				F5C33CBA19490216008426D2 /* AdMob */,
 				ACF24A4D192BE96100DCAC59 /* AppDelegate.h */,
 				ACF24A4E192BE96100DCAC59 /* AppDelegate.m */,
 				AC625241192BEAE000034F59 /* ViewController.h */,
 				AC625242192BEAE000034F59 /* ViewController.m */,
 				ACF24A73192BE9AC00DCAC59 /* Main.storyboard */,
+				3CF626AF1B1D3BD800ED0249 /* ServerCheckViewController.h */,
+				3CF626B01B1D3BD800ED0249 /* ServerCheckViewController.m */,
 				ACF24A75192BE9BB00DCAC59 /* Images.xcassets */,
 				AC625248192BEB0700034F59 /* Resources */,
 				ACF24A45192BE96100DCAC59 /* Supporting Files */,
@@ -460,24 +486,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F5C33CBA19490216008426D2 /* AdMob */ = {
+		FBD36DDF0809F609C7EFCAD7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3C99C5331A34B83D00823898 /* GADAdMobExtras.h */,
-				3C99C5341A34B83D00823898 /* GADAdNetworkExtras.h */,
-				3C99C5351A34B83D00823898 /* GADAdSize.h */,
-				3C99C5361A34B83D00823898 /* GADBannerView.h */,
-				3C99C5371A34B83D00823898 /* GADBannerViewDelegate.h */,
-				3C99C5381A34B83D00823898 /* GADInAppPurchase.h */,
-				3C99C5391A34B83D00823898 /* GADInAppPurchaseDelegate.h */,
-				3C99C53A1A34B83D00823898 /* GADInterstitial.h */,
-				3C99C53B1A34B83D00823898 /* GADInterstitialDelegate.h */,
-				3C99C53C1A34B83D00823898 /* GADModules.h */,
-				3C99C53D1A34B83D00823898 /* GADRequest.h */,
-				3C99C53E1A34B83D00823898 /* GADRequestError.h */,
-				3C99C53F1A34B83D00823898 /* libGoogleAdMobAds.a */,
+				6D468EC2F9CED33E8D0A8F6B /* Pods-Dodge Template.debug.xcconfig */,
+				A7FE6EACC6A8427997C9085F /* Pods-Dodge Template.release.xcconfig */,
+				1ADA1EC486CF95834605341A /* Pods-Dodge Template.distribution.xcconfig */,
 			);
-			path = AdMob;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,9 +503,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACF24A6D192BE96100DCAC59 /* Build configuration list for PBXNativeTarget "Dodge Template" */;
 			buildPhases = (
+				EF33552307C806F9FD46BD22 /* Check Pods Manifest.lock */,
 				ACF24A37192BE96100DCAC59 /* Sources */,
 				ACF24A38192BE96100DCAC59 /* Frameworks */,
 				ACF24A39192BE96100DCAC59 /* Resources */,
+				774CBC093219C0F4AD9574C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -570,7 +588,6 @@
 				1897798E1A3A636600E2AA24 /* iPad@2x.png in Resources */,
 				189779771A3A636600E2AA24 /* Icon-60.png in Resources */,
 				189350CE195EE997001903AF /* AppIcon60x60@2x.png in Resources */,
-				180ED3B2195E3ACA005BB26A /* bgSTANDARD.mp3 in Resources */,
 				189350C9195EE997001903AF /* AppIcon50x50.png in Resources */,
 				189350CC195EE997001903AF /* AppIcon57x57@2x.png in Resources */,
 				181C42A71961AEC1006E8FBE /* Chempo@2x.png in Resources */,
@@ -581,12 +598,12 @@
 				18FAB6AD1960DDDF00A984CF /* back@2x.png in Resources */,
 				189350D2195EE997001903AF /* AppIcon76x76@2x.png in Resources */,
 				ACF24A49192BE96100DCAC59 /* InfoPlist.strings in Resources */,
-				3C5503501A3512B80062E30C /* bg.mp3 in Resources */,
 				ACF24A96192BE9D000DCAC59 /* 8-BIT WONDER.TTF in Resources */,
 				1897797C1A3A636600E2AA24 /* Icon-76.png in Resources */,
 				189779881A3A636600E2AA24 /* iTunesArtwork@2x.png in Resources */,
 				3C5503581A3515EB0062E30C /* spark.png in Resources */,
 				189779831A3A636600E2AA24 /* Icon-Small.png in Resources */,
+				3C9FCA6B1B109D850064652D /* summer.png in Resources */,
 				189350D8195EED8C001903AF /* i4-4s.png in Resources */,
 				189350C7195EE997001903AF /* AppIcon40x40.png in Resources */,
 				189779791A3A636600E2AA24 /* Icon-60@3x.png in Resources */,
@@ -630,6 +647,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		774CBC093219C0F4AD9574C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dodge Template/Pods-Dodge Template-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF33552307C806F9FD46BD22 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACF24A37192BE96100DCAC59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -637,6 +687,7 @@
 			files = (
 				3C055FD41960CEEB00D4836E /* GameViewController.m in Sources */,
 				AC625246192BEAE000034F59 /* ViewController.m in Sources */,
+				3CF626B11B1D3BD800ED0249 /* ServerCheckViewController.m in Sources */,
 				ACF24A4F192BE96100DCAC59 /* AppDelegate.m in Sources */,
 				3C937346195DD96900D22E55 /* MylogonAudio.m in Sources */,
 				ACF24A4B192BE96100DCAC59 /* main.m in Sources */,
@@ -720,6 +771,7 @@
 		};
 		6DF898CA192FA0FF000E40FF /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADA1EC486CF95834605341A /* Pods-Dodge Template.distribution.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = NewLaunchImages;
@@ -728,6 +780,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Dodge",
+					Template,
+					"/Users/lukesadler/Downloads/parse-library-1.7.4",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dodge Template/Dodge Template-Prefix.pch";
@@ -739,10 +794,14 @@
 					"\"$(PROJECT_DIR)/Dodge Template/Admob\"",
 					"$(PROJECT_DIR)/Dodge",
 					Template/AdMob,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "13922422-1388-4FEC-870F-42FD68B0B47E";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -842,6 +901,7 @@
 		};
 		ACF24A6E192BE96100DCAC59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D468EC2F9CED33E8D0A8F6B /* Pods-Dodge Template.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = NewLaunchImages;
@@ -850,6 +910,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Dodge",
+					Template,
+					"/Users/lukesadler/Downloads/parse-library-1.7.4",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dodge Template/Dodge Template-Prefix.pch";
@@ -861,10 +924,14 @@
 					"\"$(PROJECT_DIR)/Dodge Template/Admob\"",
 					"$(PROJECT_DIR)/Dodge",
 					Template/AdMob,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "13922422-1388-4FEC-870F-42FD68B0B47E";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -872,6 +939,7 @@
 		};
 		ACF24A6F192BE96100DCAC59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7FE6EACC6A8427997C9085F /* Pods-Dodge Template.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = NewLaunchImages;
@@ -880,6 +948,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Dodge",
+					Template,
+					"/Users/lukesadler/Downloads/parse-library-1.7.4",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dodge Template/Dodge Template-Prefix.pch";
@@ -891,10 +962,14 @@
 					"\"$(PROJECT_DIR)/Dodge Template/Admob\"",
 					"$(PROJECT_DIR)/Dodge",
 					Template/AdMob,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = BroFist;
-				PROVISIONING_PROFILE = "13922422-1388-4FEC-870F-42FD68B0B47E";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,15 +8,27 @@
 #import "AppDelegate.h"
 #import "GameCenterManager.h"
 
+BOOL newVersion;
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"uDdwoOVTRoWZKswEihOSlbyL7nW3pjxcBAbQuubj"
+                  clientKey:@"VQLdue27NI09pFgDW4NToTxorZc5WE33sLurXPCU"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     
     // Override point for customization after application launch.
     [[GameCenterManager sharedManager]setupManager];
-    [[MylogonAudio sharedInstance]playBackgroundMusic:@"bg.mp3"];
+    
+    
     socialTen = 5;
     return YES;
 }

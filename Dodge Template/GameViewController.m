@@ -22,13 +22,12 @@
     if(isiPad)
     {
         creditsView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2, 2);
-        creditsView.center = CGPointMake(screenSize.width/2, screenSize.height/2);
-        
-        groundImage.frame = CGRectMake(0, 0, screenSize.width, 60);
-        bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
     }
-    
-    
+    creditsView.center = CGPointMake(self.view.frame.size.width/2, screenSize.height/2);
+
+    groundImage.frame = CGRectMake(0, 0, self.view.frame.size.width, 60);
+    bgView.frame = self.view.frame;
+
 }
 
 -(IBAction)back:(id)sender{
